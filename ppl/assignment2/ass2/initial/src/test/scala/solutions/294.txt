@@ -1,0 +1,1 @@
+Program(List(FuncDecl(Id(main),List(),VoidType,Block(List(),List(If(BinaryOp(==,CallExpr(Id(getString),List(ArrayCell(Id(str),IntLiteral(0)))),StringLiteral(str)),CallExpr(Id(println),List(StringLiteral(Finish))),Some(CallExpr(Id(print),List()))))))))

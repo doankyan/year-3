@@ -1,0 +1,1 @@
+Program(List(FuncDecl(Id(main),List(),VoidType,Block(List(),List(CallExpr(Id(test),List(CallExpr(Id(scan),List()),CallExpr(Id(detect),List(CallExpr(Id(list),List(IntLiteral(1),IntLiteral(3),ArrayCell(CallExpr(Id(node),List()),IntLiteral(3)))))))))))))

@@ -1,0 +1,22 @@
+
+        void main(){
+          int n,x,i,j;
+          float e,f,cos,temp;
+          printf ("Enter value n: \n");
+          scanf("%d", n);
+          printf ("Enter value e: \n");
+          scanf("%f", e);
+          for (i= 1;i <= n;i = i + 1)
+          {
+            temp = 1;
+            for (j= 2;j <= i;j = j + 2)
+            {
+              temp = temp * j;
+            }
+            cos = cos + (pow(e, i) / temp) * f;
+            f = f * (-1);
+          }
+          printf("Sum of cos = %2.6f\n", cos);
+          printf("The value of cos(%d) = %f\n",x,cos(x));
+        }
+      

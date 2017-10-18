@@ -1,0 +1,5 @@
+int main(){
+      int a,b,c[10];
+      float x,y,z,_ahihi903[100];
+      return (3-1)*1234+990;
+      }

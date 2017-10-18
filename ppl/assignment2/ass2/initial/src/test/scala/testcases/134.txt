@@ -1,0 +1,8 @@
+int dequy(int a, int b, int x[]){
+  a = 9878;
+  b= 12345;
+  x = extends(a);
+  x = extends(b);
+  return dequy(x[1],x[2],dequy(x[1],x[2],0));
+  return 0;
+}

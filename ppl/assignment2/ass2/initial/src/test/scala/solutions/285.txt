@@ -1,0 +1,1 @@
+Program(List(FuncDecl(Id(cal),List(),IntType,Block(List(),List())),FuncDecl(Id(mul),List(),FloatType,Block(List(),List())),FuncDecl(Id(sep),List(),StringType,Block(List(),List())),FuncDecl(Id(check),List(),BoolType,Block(List(),List())),FuncDecl(Id(main),List(),VoidType,Block(List(),List()))))

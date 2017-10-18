@@ -1,0 +1,1 @@
+Program(List(FuncDecl(Id(main),List(),VoidType,Block(List(),List(Dowhile(List(Block(List(),List(BinaryOp(+,IntLiteral(3),IntLiteral(3)))),Block(List(),List()),Block(List(),List(Id(a)))),BooleanLiteral(true)))))))

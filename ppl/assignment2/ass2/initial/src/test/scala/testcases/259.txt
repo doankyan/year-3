@@ -1,0 +1,1 @@
+void main () {{int a,b,c; float f[5];}}

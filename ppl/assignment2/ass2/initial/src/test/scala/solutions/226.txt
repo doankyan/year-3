@@ -1,0 +1,1 @@
+Program(List(FuncDecl(Id(main),List(),IntType,Block(List(),List(Dowhile(List(IntLiteral(1),BooleanLiteral(true),StringLiteral(c),Id(d)),BinaryOp(*,BinaryOp(/,BinaryOp(*,ArrayCell(Id(size),ArrayCell(Id(b),Id(f))),FloatLiteral(1.6)),ArrayCell(Id(abc),BinaryOp(-,IntLiteral(3),BinaryOp(%,IntLiteral(9),Id(f))))),IntLiteral(3))))))))

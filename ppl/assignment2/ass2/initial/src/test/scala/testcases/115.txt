@@ -1,0 +1,9 @@
+void main () {
+      if (1 == 2) b = 9;
+      else b = "string";
+      do
+       c = 1+1;
+       ahihi = "dongoc";
+       good = "job\t";
+      while 9 >0;
+      }

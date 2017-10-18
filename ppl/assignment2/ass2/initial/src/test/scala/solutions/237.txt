@@ -1,0 +1,1 @@
+Program(List(FuncDecl(Id(main),List(),IntType,Block(List(),List(If(BinaryOp(==,IntLiteral(3),IntLiteral(3)),For(Id(a),Id(b),Id(c),BinaryOp(+,IntLiteral(3),IntLiteral(3))),None))))))

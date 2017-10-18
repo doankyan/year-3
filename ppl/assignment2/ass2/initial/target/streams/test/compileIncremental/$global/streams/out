@@ -1,0 +1,27 @@
+[0m[[0m[0mdebug[0m] [0m[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial source changes: [0m
+[0m[[0m[0mdebug[0m] [0m[0m	removed:Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	added: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	modified: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated products: Set(E:\github\year-3\ppl\assignment2\ass2\initial\target\scala-2.12\test-classes\Timed.class, E:\github\year-3\ppl\assignment2\ass2\initial\target\scala-2.12\test-classes\TestLexer.class, E:\github\year-3\ppl\assignment2\ass2\initial\target\scala-2.12\test-classes\AstSuite.class, E:\github\year-3\ppl\assignment2\ass2\initial\target\scala-2.12\test-classes\LexerSuite.class, E:\github\year-3\ppl\assignment2\ass2\initial\target\scala-2.12\test-classes\TestAst.class, E:\github\year-3\ppl\assignment2\ass2\initial\target\scala-2.12\test-classes\ParserSuite.class, E:\github\year-3\ppl\assignment2\ass2\initial\target\scala-2.12\test-classes\TestUtils.class, E:\github\year-3\ppl\assignment2\ass2\initial\target\scala-2.12\test-classes\Timed$$anon$1.class, E:\github\year-3\ppl\assignment2\ass2\initial\target\scala-2.12\test-classes\TestParser.class)[0m
+[0m[[0m[0mdebug[0m] [0m[0mExternal API changes: API Changes: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mModified binary dependencies: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mSources indirectly invalidated by:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	product: Set(E:\github\year-3\ppl\assignment2\ass2\initial\src\test\scala\LexerSuite.scala, E:\github\year-3\ppl\assignment2\ass2\initial\src\test\scala\TestParser.scala, E:\github\year-3\ppl\assignment2\ass2\initial\src\test\scala\TestLexer.scala, E:\github\year-3\ppl\assignment2\ass2\initial\src\test\scala\TestAst.scala, E:\github\year-3\ppl\assignment2\ass2\initial\src\test\scala\ParserSuite.scala, E:\github\year-3\ppl\assignment2\ass2\initial\src\test\scala\AstSuite.scala, E:\github\year-3\ppl\assignment2\ass2\initial\src\test\scala\TestUtils.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	binary dep: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	external source: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll sources are invalidated.[0m
+[0m[[0m[0mdebug[0m] [0m[0mRecompiling all 7 sources: invalidated sources (7) exceeded 50.0% of all sources[0m
+[0m[[0m[0minfo[0m] [0m[0mCompiling 7 Scala sources to E:\github\year-3\ppl\assignment2\ass2\initial\target\scala-2.12\test-classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.12:1.0.1:compile for Scala 2.12.3[0m
+[0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.12:1.0.1:compile for Scala 2.12.3[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 431db3fa for Scala compiler version 2.12.3[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-bootclasspath[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Program Files\Java\jdk1.8.0_144\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_144\jre\classes;C:\Users\Doan Ky An\.sbt\boot\scala-2.12.3\lib\scala-library.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
+[0m[[0m[0mdebug[0m] [0m[0m	E:\github\year-3\ppl\assignment2\ass2\initial\target\scala-2.12\test-classes;E:\github\year-3\ppl\assignment2\ass2\initial\target\scala-2.12\classes;E:\github\year-3\ppl\assignment2\ass2\initial\.\external\antlr-4.6-complete.jar;E:\github\year-3\ppl\assignment2\ass2\initial\.\external\jasmin.jar;C:\Users\Doan Ky An\.ivy2\cache\org.scalatest\scalatest_2.12\bundles\scalatest_2.12-3.0.1.jar;C:\Users\Doan Ky An\.ivy2\cache\org.scalactic\scalactic_2.12\bundles\scalactic_2.12-3.0.1.jar;C:\Users\Doan Ky An\.sbt\boot\scala-2.12.3\lib\scala-reflect.jar;C:\Users\Doan Ky An\.ivy2\cache\org.scala-lang.modules\scala-xml_2.12\bundles\scala-xml_2.12-1.0.5.jar;C:\Users\Doan Ky An\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.12\bundles\scala-parser-combinators_2.12-1.0.4.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 2.494951465 s[0m
+[0m[[0m[0minfo[0m] [0m[0mDone compiling.[0m

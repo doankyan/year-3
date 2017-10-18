@@ -1,0 +1,1 @@
+int main (string a, int arg[]) {int a,b; break; a=1; break; b=2; break;}

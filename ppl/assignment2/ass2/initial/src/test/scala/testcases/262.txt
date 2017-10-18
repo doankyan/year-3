@@ -1,0 +1,1 @@
+void main () {{int x[2],y; -x[2]*b=2;}{break ;}{string f; return f[2]/f[1];}}

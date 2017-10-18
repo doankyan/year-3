@@ -1,0 +1,2 @@
+void main () {
+        if (1+arr[3]) if (false) c=1;}

@@ -1,0 +1,1 @@
+Program(List(FuncDecl(Id(main),List(),VoidType,Block(List(),List(Continue,CallExpr(Id(sum),List(Id(x),Id(y))),Continue)))))

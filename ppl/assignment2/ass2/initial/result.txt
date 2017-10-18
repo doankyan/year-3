@@ -1,0 +1,107 @@
+Run starting. Expected test count is: 0
+AstSuite:
+- a simple program with void as return type of main
+- 2 function declare in program
+- a simple program with var declare
+- a simple program with function has parameter
+- single var declare and single function declare
+- function has var declare
+- function has break
+- simple fuction with array pointer type
+- simple main function with expression statement
+- a simple program with complicated var declare
+- function declare with parameter and var declaration
+- test less and equal expression
+- complicated expression statement
+- if-test (simple)
+- program with vardeclare mix if statement
+- test simple index expression
+- if-else statement test (simple)
+- test if-else extend : if-statement in if part
+- test if-else extend : if-statement in else part
+- an if-else statement that has complicated expression
+- test nested if-else statement : if part
+- test nested if-else statement : else part
+- nested if statement
+- if-else statement in if
+- test simple do while statement
+- test do while statement with complicated expression part
+- if statement in do while
+- if-else statement in do while
+- nested do while statement testing
+- do while statement in if
+- do while statement in if-else
+- simple testcase for statement
+- test for statement has complicated expression
+- if statement in for statement
+- if-else statement in for statement
+- do while statement in for statement
+- for statement in if statement
+- for statement in if-else statement
+- for in do while statement
+- test nested for statement
+- test many break statements
+- break statement in for statement
+- break statement in do while statement
+- break statement in if statement
+- break statement in if-else statement
+- test simple continue statement
+- test multiple continue statements
+- continue statement in for statement
+- continue statement in do while statement
+- continue statement in if statement
+- continue statement in if-else statement
+- test simple return
+- another simple test return with expression
+- return statement in if statement
+- return statement in if-else statement
+- return statement in do-while statement
+- return statement in for statement
+- test multi expression statement and funcall expression
+- test simple block statement with only var declarations
+- test simple block statement with only statements
+- test full block statement
+- test many block statements
+- block statement in if statement
+- block statement in if-else statement
+- block statement in for statement
+- block statement in do while statement
+- test simple bracket and index expression
+- test complex bracket and index expression
+- test string operation
+- declaration complicated
+- test all kind of statement
+- test special string 
+- test expression: bracket and assign
+- test expression: index and assign
+- test expression: bracket complex
+- all decalre below main
+- a function that parameter is pointer type
+- test equal operator
+- index expression extend
+- test line comment
+- test block comment
+- bracket expression extend
+- Unary expression
+- All kind of vardeclare
+- simple function declare - simple type: no parameter and body 
+- simple function declare - array pointer type: no parameter and body 
+- full function declare - all simple type
+- full function declare - array pointer type
+- function call simple - 1 or no parameter
+- function call test  - 2 or more parameter
+- function call in function call
+- test function call in complicated case
+- function call used in if statement
+- function call used in if-else statement
+- function call used in for statement
+- function call used in do while statement
+- function call used in return statement
+- function call used in block statement
+- test complicated program
+- another complicated program
+Run completed in 2 seconds, 130 milliseconds.
+Total number of tests run: 100
+Suites: completed 1, aborted 0
+Tests: succeeded 100, failed 0, canceled 0, ignored 0, pending 0
+All tests passed.

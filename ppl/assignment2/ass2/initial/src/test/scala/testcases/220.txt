@@ -1,0 +1,6 @@
+void main () {
+      if(get(3)-vector[3]+(4-5||str[def[g]<g[9]]))
+        "abc";
+      else
+        true;
+    }

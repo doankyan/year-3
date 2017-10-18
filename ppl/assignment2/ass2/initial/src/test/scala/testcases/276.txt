@@ -1,0 +1,1 @@
+void main () {} int a; string a; string[]substring(){}

@@ -1,0 +1,1 @@
+void main () {for(1.2e-1;1;"c")if(a=b)a=1;}

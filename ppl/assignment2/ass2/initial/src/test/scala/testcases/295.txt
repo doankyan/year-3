@@ -1,0 +1,5 @@
+
+        void main() {
+          for (getInt(1,-4,5);getFloat(1.3,3e4,7.3e-3);getString()) exit();
+        }
+      

@@ -1,0 +1,11 @@
+
+      void main (){
+        if (0) 1-1;
+        if (true) "hi"; else "hello";
+        for (a[0];"abc";false) 1.0+0.345;
+        do "123" + 123 ; while g[h[(1*4*6.0)]];
+        return 0;
+        break;
+        continue;
+      }
+    

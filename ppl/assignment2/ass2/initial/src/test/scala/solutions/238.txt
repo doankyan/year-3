@@ -1,0 +1,1 @@
+Program(List(FuncDecl(Id(main),List(),VoidType,Block(List(),List(If(CallExpr(Id(check),List(IntLiteral(0))),For(BooleanLiteral(true),BooleanLiteral(false),BinaryOp(+,BinaryOp(-,UnaryOp(-,IntLiteral(1)),IntLiteral(2)),UnaryOp(!,IntLiteral(2))),CallExpr(Id(print),List(StringLiteral(Hi)))),Some(For(StringLiteral(x),StringLiteral(y),StringLiteral(z),IntLiteral(0)))))))))

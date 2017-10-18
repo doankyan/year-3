@@ -1,0 +1,4 @@
+boolean[] main (string d[]) {
+                      int a;
+                      float b,c[4];
+                }

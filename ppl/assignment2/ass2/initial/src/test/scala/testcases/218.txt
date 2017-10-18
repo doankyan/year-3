@@ -1,0 +1,2 @@
+void main () {
+        if (a=b) {if(b=c) a=1;} else b=1; }
