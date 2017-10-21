@@ -1,0 +1,27 @@
+Ve cay Ast hoac la viet bieu thuc tuyen tinh
+Cau 1:
+int *p = new int;
+int *&q = p;
+doi tuong p co 2 alias la p va q
+Cau 2:
+int m;(static)
+int *foo(int x(stack))
+	static int y;(static)
+	int *z(stack) = new int;(heap)
+	return &x;//dangling,rac
+	return &y;//alias,rac
+	return z;//khong gay ra loi
+	return &m;//alias,rac
+Cau3:
+a (+|-) b (*|-) c
+Language design time
+Cau 4:
+var a,b,c,d;
+proc sub1(b)
+	var d;
+	proc sub2(a)
+		begin ... end
+begin ... end
+proc sub0(c)
+	begin ... end
+begin ... end 

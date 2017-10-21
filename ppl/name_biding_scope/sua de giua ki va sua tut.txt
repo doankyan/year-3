@@ -1,0 +1,43 @@
+Ve cay Ast hoac la viet bieu thuc tuyen tinh
+Cau 1:
+int *p = new int;
+int *&q = p;
+doi tuong p co 2 alias la p va q
+Cau 2:
+int m;(static)
+int *foo(int x(stack))
+	static int y;(static)
+	int *z(stack) = new int;(heap)
+	return &x;//dangling,rac
+	return &y;//alias,rac
+	return z;//khong gay ra loi
+	return &m;//alias,rac
+Cau3:
+a (+|-) b (*|-) c
+Language design time Binding 
+Cau 4: 
+var a,b,c,d; //1
+proc sub1(b) //2
+	var d; //3
+	proc sub2(a) //4
+	begin ... end
+begin ... end
+proc sub0(c) //5
+	begin ... end
+begin ... end
+--------------------------------
+M: a,b,c,d //1 sub1 //2 sub0 //5
+sub1: a//1,b//2,c//1,d//3,sub2//4,sub1//2,sub0//5
+sub2: a//4 ,b//2 ,c//1 ,d//3, sub1//2, sub0//5
+sub0: a//1,b//,c//5,d//1,sub1(nhin tu main), sub0(nhin tu main)
+Cau 5: (Static Scope) - Pascal la ngon ngu Static Scope 
+khi khai bao static scope thi khi Goi ham Van Tuan Theo static rule:
+		static scope tuan theo: static rule
+						dynamic rule( tuan theo static rule): khi co nhieu bang hoat dong thi phai chon bang gan no nhat 
+M->sub1->sub1->sub2
+M: o1,o2,o3,o4
+sub1: o5,o6
+sub1: o7,o8
+sub2: o9
+=====> b/o7
+Cau 6: Dynamic Scope
