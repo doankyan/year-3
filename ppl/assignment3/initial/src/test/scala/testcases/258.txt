@@ -1,0 +1,1 @@
+void main (){i=1;foo(1,2);del(stack[1],(stack[0]+1));100;mul("a","b","c");}

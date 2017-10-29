@@ -1,0 +1,1 @@
+string main (boolean x) {do if (a>3) a+1; else a+2; 1+1; 1; while a[3]=0;}

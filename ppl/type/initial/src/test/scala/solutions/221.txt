@@ -1,0 +1,1 @@
+Program(List(FuncDecl(Id(main),List(),VoidType,Block(List(),List(If(BinaryOp(=,Id(a),Id(b)),If(BinaryOp(=,Id(b),Id(c)),BinaryOp(=,Id(b),IntLiteral(1)),Some(BinaryOp(=,Id(c),IntLiteral(1)))),Some(BinaryOp(=,Id(a),IntLiteral(1)))))))))

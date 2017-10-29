@@ -1,0 +1,1 @@
+Program(List(FuncDecl(Id(main),List(),VoidType,Block(List(),List(CallExpr(Id(foo),List(IntLiteral(1))),CallExpr(Id(check),List(BooleanLiteral(true))),CallExpr(Id(print),List()),CallExpr(Id(take),List(StringLiteral(abc))),CallExpr(Id(toInterger),List(FloatLiteral(1.2356))),CallExpr(Id(try),List(Id(a))),CallExpr(Id(extend),List(ArrayCell(Id(pointer),IntLiteral(0)))))))))

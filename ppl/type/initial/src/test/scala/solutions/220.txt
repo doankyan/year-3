@@ -1,0 +1,1 @@
+Program(List(FuncDecl(Id(main),List(),VoidType,Block(List(),List(If(BinaryOp(+,BinaryOp(-,CallExpr(Id(get),List(IntLiteral(3))),ArrayCell(Id(vector),IntLiteral(3))),BinaryOp(||,BinaryOp(-,IntLiteral(4),IntLiteral(5)),ArrayCell(Id(str),BinaryOp(<,ArrayCell(Id(def),Id(g)),ArrayCell(Id(g),IntLiteral(9)))))),StringLiteral(abc),Some(BooleanLiteral(true))))))))

@@ -1,0 +1,6 @@
+
+    int sum(){
+      if (abc) makesomenoise(1,2,3,4);
+
+      for(;;) foo()
+      }

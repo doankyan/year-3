@@ -1,0 +1,1 @@
+int f[3],b,a,e[5],d; string str;

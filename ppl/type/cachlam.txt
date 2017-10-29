@@ -1,0 +1,9 @@
+Symbol table
+==a,b,c,d
+Truoc khi dat phai kiem tra co chua? (Redeclares)
+-BTL3 chi lam o cap toan cuc
+int a,b;
+void main(int a, float b){}
+List(Symbol("main",FunctioType,(List(IntType,FloatType),VoidType),null)
+symbol("b",IntType,null)
+symbol("a",IntType,null)

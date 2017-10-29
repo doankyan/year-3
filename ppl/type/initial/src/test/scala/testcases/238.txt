@@ -1,0 +1,1 @@
+void main () {if(check(0)) for(true;false;-1-2+!2) print("Hi"); else for("x";"y";"z") 0;  }

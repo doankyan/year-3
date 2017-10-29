@@ -1,0 +1,5 @@
+
+        void main() {
+          wait(a,1.4,f[take()+input(ls[0])[0]])[3/a%cont(pre[3])["true"+true]]==0;
+        }
+      

@@ -1,0 +1,28 @@
+
+    int  a;
+    int _ahihi;
+
+    void main () {
+      if (1==2) b = 9;
+      else b = "string";
+      do
+       c = 1+1;
+       ahihi = "dongoc";
+       break;
+       good = "job\t";
+      while 9 >0;
+
+      sum();
+      
+      for ( i =1; i <= n; i = i+ 1)
+        a = a + 1;
+      }
+
+      int sum(){
+        if(!a) sum();
+        return 0;
+      }
+
+      float[] dosome (float x[], int y[]){
+        return x*y;
+      }

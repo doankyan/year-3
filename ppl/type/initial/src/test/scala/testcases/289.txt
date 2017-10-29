@@ -1,0 +1,11 @@
+
+        void main (){
+          foo(1);
+          check(true);
+          print();
+          take("abc");
+          toInterger(1.2356);
+          try(a);
+          extend(pointer[0]);
+        }
+      

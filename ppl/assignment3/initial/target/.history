@@ -1,0 +1,47 @@
+compile
+testOnly AstSuite
+testOnly ParserSuite
+testOnly AstSuite
+clean
+compile
+test
+clean
+compile
+testOnly AstSuite
+testOnly ParserSuite
+run -draw program ./src/test/scala/testcases/101.txt
+testOnly AstSuite
+testOnly ParserSuite
+run -draw program ./src/test/scala/testcases/101.txt
+testOnly ParserSuite
+run -draw program ./src/test/scala/testcases/101.txt
+testOnly ParserSuite
+run -draw program ./src/test/scala/testcases/101.txt
+testOnly ParserSuite
+run -draw program ./src/test/scala/testcases/101.txt
+testOnly ParserSuite
+run -draw program ./src/test/scala/testcases/101.txt
+testOnly ParserSuite
+run -draw program ./src/test/scala/testcases/101.txt
+testOnly ParserSuite
+clean
+compile
+testOnly ParserSuite
+run -draw program ./src/test/scala/testcases/101.txt
+testOnly ParserSuite
+run -draw program ./src/test/scala/testcases/101.txt
+compile
+testOnly ParserSuite
+compile
+testOnly ParserSuite
+testOnly AstSuite
+clean
+compile
+testOnly AstSuite
+clean
+test
+compile
+test
+exit
+compile
+testOnly CheckerSuite

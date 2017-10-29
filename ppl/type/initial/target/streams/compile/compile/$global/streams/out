@@ -1,0 +1,112 @@
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\main\mc\astgen\ASTGeneration.scala:293:13: value vardecl is not a member of mc.parser.MCParser.DeclContext[0m
+[0m[[0m[31merror[0m] [0m[0m    if (ctx.vardecl() != null) [0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\main\mc\astgen\ASTGeneration.scala:294:11: value vardecl is not a member of mc.parser.MCParser.DeclContext[0m
+[0m[[0m[31merror[0m] [0m[0m      ctx.vardecl().accept(this).asInstanceOf[List[VarDecl]][0m
+[0m[[0m[31merror[0m] [0m[0m          ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\main\mc\astgen\ASTGeneration.scala:296:11: value funcdecl is not a member of mc.parser.MCParser.DeclContext[0m
+[0m[[0m[31merror[0m] [0m[0m      ctx.funcdecl().accept(this).asInstanceOf[List[FuncDecl]][0m
+[0m[[0m[31merror[0m] [0m[0m          ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\main\mc\astgen\ASTGeneration.scala:298:33: not found: type VardeclContext[0m
+[0m[[0m[31merror[0m] [0m[0m  override def visitVardecl(ctx:VardeclContext) = //VarDecl(Id("cao"),IntType)[0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\main\mc\astgen\ASTGeneration.scala:306:39: not found: type PrimitivetypeContext[0m
+[0m[[0m[31merror[0m] [0m[0m  override def visitPrimitivetype(ctx:PrimitivetypeContext) = [0m
+[0m[[0m[31merror[0m] [0m[0m                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\main\mc\astgen\ASTGeneration.scala:314:33: not found: type VariablContext[0m
+[0m[[0m[31merror[0m] [0m[0m  override def visitVariabl(ctx:VariablContext) = IntLiteral(ctx.INTLIT().getText.toInt)[0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\main\mc\astgen\ASTGeneration.scala:316:36: not found: type ArrpointerContext[0m
+[0m[[0m[31merror[0m] [0m[0m  override def visitArrpointer(ctx:ArrpointerContext) = [0m
+[0m[[0m[31merror[0m] [0m[0m                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\main\mc\astgen\ASTGeneration.scala:319:34: not found: type FuncdeclContext[0m
+[0m[[0m[31merror[0m] [0m[0m  override def visitFuncdecl(ctx:FuncdeclContext) = [0m
+[0m[[0m[31merror[0m] [0m[0m                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\main\mc\astgen\ASTGeneration.scala:323:34: not found: type FunctypeContext[0m
+[0m[[0m[31merror[0m] [0m[0m  override def visitFunctype(ctx:FunctypeContext) = [0m
+[0m[[0m[31merror[0m] [0m[0m                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\main\mc\astgen\ASTGeneration.scala:331:35: not found: type ParamlistContext[0m
+[0m[[0m[31merror[0m] [0m[0m  override def visitParamlist(ctx:ParamlistContext) = [0m
+[0m[[0m[31merror[0m] [0m[0m                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\main\mc\astgen\ASTGeneration.scala:334:35: not found: type ParamdeclContext[0m
+[0m[[0m[31merror[0m] [0m[0m  override def visitParamdecl(ctx:ParamdeclContext) =[0m
+[0m[[0m[31merror[0m] [0m[0m                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\main\mc\astgen\ASTGeneration.scala:342:34: not found: type ExAssignContext[0m
+[0m[[0m[31merror[0m] [0m[0m  override def visitExAssign(ctx:ExAssignContext) = [0m
+[0m[[0m[31merror[0m] [0m[0m                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\main\mc\astgen\ASTGeneration.scala:345:31: not found: type ExAndContext[0m
+[0m[[0m[31merror[0m] [0m[0m  override def visitExAnd(ctx:ExAndContext) = [0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\main\mc\astgen\ASTGeneration.scala:348:30: not found: type ExOrContext[0m
+[0m[[0m[31merror[0m] [0m[0m  override def visitExOr(ctx:ExOrContext) = [0m
+[0m[[0m[31merror[0m] [0m[0m                             ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\main\mc\astgen\ASTGeneration.scala:351:29: not found: type Ex2Context[0m
+[0m[[0m[31merror[0m] [0m[0m  override def visitEx2(ctx:Ex2Context) = ctx.getChild(0).accept(this).asInstanceOf[Expr][0m
+[0m[[0m[31merror[0m] [0m[0m                            ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\main\mc\astgen\ASTGeneration.scala:353:30: not found: type ExENContext[0m
+[0m[[0m[31merror[0m] [0m[0m  override def visitExEN(ctx:ExENContext) = [0m
+[0m[[0m[31merror[0m] [0m[0m                             ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\main\mc\astgen\ASTGeneration.scala:356:29: not found: type Ex3Context[0m
+[0m[[0m[31merror[0m] [0m[0m  override def visitEx3(ctx:Ex3Context) = ctx.getChild(0).accept(this).asInstanceOf[Expr][0m
+[0m[[0m[31merror[0m] [0m[0m                            ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\main\mc\astgen\ASTGeneration.scala:358:30: not found: type ExLGContext[0m
+[0m[[0m[31merror[0m] [0m[0m  override def visitExLG(ctx:ExLGContext) = [0m
+[0m[[0m[31merror[0m] [0m[0m                             ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\main\mc\astgen\ASTGeneration.scala:361:29: not found: type Ex4Context[0m
+[0m[[0m[31merror[0m] [0m[0m  override def visitEx4(ctx:Ex4Context) = ctx.getChild(0).accept(this).asInstanceOf[Expr][0m
+[0m[[0m[31merror[0m] [0m[0m                            ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\main\mc\astgen\ASTGeneration.scala:363:29: not found: type Ex5Context[0m
+[0m[[0m[31merror[0m] [0m[0m  override def visitEx5(ctx:Ex5Context) = ctx.getChild(0).accept(this).asInstanceOf[Expr][0m
+[0m[[0m[31merror[0m] [0m[0m                            ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\main\mc\astgen\ASTGeneration.scala:365:31: not found: type ExNotContext[0m
+[0m[[0m[31merror[0m] [0m[0m  override def visitExNot(ctx:ExNotContext) = [0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\main\mc\astgen\ASTGeneration.scala:368:31: not found: type ExMulContext[0m
+[0m[[0m[31merror[0m] [0m[0m  override def visitExMul(ctx:ExMulContext) = [0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\main\mc\astgen\ASTGeneration.scala:371:31: not found: type ExAddContext[0m
+[0m[[0m[31merror[0m] [0m[0m  override def visitExAdd(ctx:ExAddContext) = [0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\main\mc\astgen\ASTGeneration.scala:374:31: not found: type ExArrContext[0m
+[0m[[0m[31merror[0m] [0m[0m  override def visitExArr(ctx:ExArrContext) = [0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\main\mc\astgen\ASTGeneration.scala:377:29: not found: type Ex6Context[0m
+[0m[[0m[31merror[0m] [0m[0m  override def visitEx6(ctx:Ex6Context) = ctx.getChild(0).accept(this).asInstanceOf[Expr][0m
+[0m[[0m[31merror[0m] [0m[0m                            ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\main\mc\astgen\ASTGeneration.scala:379:30: not found: type ExLRContext[0m
+[0m[[0m[31merror[0m] [0m[0m  override def visitExLR(ctx:ExLRContext) = ctx.expr().accept(this).asInstanceOf[Expr][0m
+[0m[[0m[31merror[0m] [0m[0m                             ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\main\mc\astgen\ASTGeneration.scala:381:32: not found: type ExCallContext[0m
+[0m[[0m[31merror[0m] [0m[0m  override def visitExCall(ctx:ExCallContext) = ctx.callexpr().accept(this).asInstanceOf[Expr][0m
+[0m[[0m[31merror[0m] [0m[0m                               ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\main\mc\astgen\ASTGeneration.scala:383:30: not found: type ExIdContext[0m
+[0m[[0m[31merror[0m] [0m[0m  override def visitExId(ctx:ExIdContext) = ctx.id().accept(this).asInstanceOf[Expr][0m
+[0m[[0m[31merror[0m] [0m[0m                             ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\main\mc\astgen\ASTGeneration.scala:385:31: not found: type BlockContext[0m
+[0m[[0m[31merror[0m] [0m[0m  override def visitBlock(ctx:BlockContext) = [0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\main\mc\astgen\ASTGeneration.scala:391:28: not found: type IdContext[0m
+[0m[[0m[31merror[0m] [0m[0m  override def visitId(ctx:IdContext) = [0m
+[0m[[0m[31merror[0m] [0m[0m                           ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\main\mc\astgen\ASTGeneration.scala:399:32: not found: type IfstmtContext[0m
+[0m[[0m[31merror[0m] [0m[0m  override def visitIfstmt(ctx:IfstmtContext) = [0m
+[0m[[0m[31merror[0m] [0m[0m                               ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\main\mc\astgen\ASTGeneration.scala:405:37: not found: type DowhilestmtContext[0m
+[0m[[0m[31merror[0m] [0m[0m  override def visitDowhilestmt(ctx:DowhilestmtContext) = [0m
+[0m[[0m[31merror[0m] [0m[0m                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\main\mc\astgen\ASTGeneration.scala:409:33: not found: type ForstmtContext[0m
+[0m[[0m[31merror[0m] [0m[0m  override def visitForstmt(ctx:ForstmtContext) = [0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\main\mc\astgen\ASTGeneration.scala:415:35: not found: type BreakstmtContext[0m
+[0m[[0m[31merror[0m] [0m[0m  override def visitBreakstmt(ctx:BreakstmtContext) = Break[0m
+[0m[[0m[31merror[0m] [0m[0m                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\main\mc\astgen\ASTGeneration.scala:417:38: not found: type ContinuestmtContext[0m
+[0m[[0m[31merror[0m] [0m[0m  override def visitContinuestmt(ctx:ContinuestmtContext) = Continue[0m
+[0m[[0m[31merror[0m] [0m[0m                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\main\mc\astgen\ASTGeneration.scala:419:36: not found: type ReturnstmtContext[0m
+[0m[[0m[31merror[0m] [0m[0m  override def visitReturnstmt(ctx:ReturnstmtContext) = [0m
+[0m[[0m[31merror[0m] [0m[0m                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\main\mc\astgen\ASTGeneration.scala:425:34: not found: type CallexprContext[0m
+[0m[[0m[31merror[0m] [0m[0m  override def visitCallexpr(ctx:CallexprContext) = [0m
+[0m[[0m[31merror[0m] [0m[0m                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m37 errors found[0m

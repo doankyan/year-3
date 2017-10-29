@@ -1,0 +1,2 @@
+void main () {
+        if (true) a=1; else if ("123") b=1; else c=1;}

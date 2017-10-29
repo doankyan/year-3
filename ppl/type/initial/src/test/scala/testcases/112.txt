@@ -1,0 +1,7 @@
+float b;
+    int _meo;    
+    int res;
+    void main(){
+    b = 9.4e4;
+    _meo=19;
+    res = _meo * b; }

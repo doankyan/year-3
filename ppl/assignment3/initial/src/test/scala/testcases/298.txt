@@ -1,0 +1,13 @@
+
+        void main() {
+          {
+            loop();
+            change(3,true);
+            record("status",initial,result[0]);
+          }
+          {
+            getFinal(abc,57.88);
+            toFinal(getFinal(),getFinal(1+2&&3));
+          }
+        }
+      

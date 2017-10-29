@@ -1,0 +1,11 @@
+Run starting. Expected test count is: 0
+CheckerSuite:
+- Var and Func Decl
+- Empty
+-  Func Decl with param
+- Var Decl
+Run completed in 244 milliseconds.
+Total number of tests run: 4
+Suites: completed 1, aborted 0
+Tests: succeeded 4, failed 0, canceled 0, ignored 0, pending 0
+All tests passed.

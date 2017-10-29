@@ -1,0 +1,6 @@
+
+        int[] div (int a, float b[]){if (a=b) a/0; else b*0;}
+        float[] modul (float x, int y[]){for (x;y;0) x+y*0;}
+        string[] seperate (string head, string tail[]){do "head"-"tail"; while "head"<"tail"[0];}
+        boolean[] check(boolean a){if(a)a=true;}
+      

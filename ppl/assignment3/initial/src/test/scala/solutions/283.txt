@@ -1,0 +1,1 @@
+Program(List(FuncDecl(Id(main),List(),VoidType,Block(List(),List(UnaryOp(-,UnaryOp(-,IntLiteral(1))),UnaryOp(!,UnaryOp(!,FloatLiteral(2.0))),UnaryOp(-,UnaryOp(!,BooleanLiteral(true))),UnaryOp(!,UnaryOp(-,StringLiteral(una))),UnaryOp(-,UnaryOp(-,UnaryOp(!,UnaryOp(-,UnaryOp(!,UnaryOp(-,UnaryOp(!,UnaryOp(!,UnaryOp(!,UnaryOp(-,Id(a))))))))))))))))

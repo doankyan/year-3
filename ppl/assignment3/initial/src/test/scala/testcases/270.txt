@@ -1,0 +1,5 @@
+int[] print(float e, float f[]){}
+         int a,b,c[3];
+         void main(){}
+         string x,y;
+      

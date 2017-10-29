@@ -1,0 +1,1 @@
+Program(List(FuncDecl(Id(main),List(),VoidType,Block(List(),List(BooleanLiteral(true),BinaryOp(+,BooleanLiteral(true),BooleanLiteral(false)),StringLiteral(int),ArrayCell(FloatLiteral(0.2),IntLiteral(2)))))))

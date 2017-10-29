@@ -1,0 +1,1 @@
+float[] main (int b, string str[]) {for (a+b-c*d/e;1<=4==2;true&&false)println(3);}

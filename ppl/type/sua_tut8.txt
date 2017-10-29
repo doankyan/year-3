@@ -1,0 +1,16 @@
+Cau1. 3.6
+so bit 1,3,5
+010011001
+Cau2. -124 bieu dien 8 bit 10000100
+Cau3. x = {1..128} dang bit chain
+128 bit => 16 bytes
+Cau5:
+Kieu struct cac thanh phan ke tiep nhau, khi doc co quyen doc tung thanh phan. align4 thi phai nam o vi tri boi so cua 4
+int float char float
+2+2+4+1+3+4
+Cau6: Variant record
+- cac thanh phan loai tru lan nhau chi lay thanh phan kich thuoc lon nhat
+- nho tinh kich thuoc cua paytime(cai dung de phan biet)
+Cau7:
+(i-lb1)x(ub2-lb2+1)+(j-lb2)
+((i-lb1)x(ub2-lb2+1)-(j-lb2))x(ub3-lb3+1)+(k-lb3)

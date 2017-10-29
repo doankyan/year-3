@@ -1,0 +1,1 @@
+Program(List(FuncDecl(Id(main),List(),VoidType,Block(List(),List(For(CallExpr(Id(getInt),List(IntLiteral(1),UnaryOp(-,IntLiteral(4)),IntLiteral(5))),CallExpr(Id(getFloat),List(FloatLiteral(1.3),FloatLiteral(30000.0),FloatLiteral(0.0073))),CallExpr(Id(getString),List()),CallExpr(Id(exit),List())))))))

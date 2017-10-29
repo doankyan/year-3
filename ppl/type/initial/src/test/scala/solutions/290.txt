@@ -1,0 +1,1 @@
+Program(List(FuncDecl(Id(main),List(),VoidType,Block(List(),List(CallExpr(Id(sum),List(IntLiteral(1),IntLiteral(2),FloatLiteral(1.23))),CallExpr(Id(strcom),List(StringLiteral(str),ArrayCell(Id(stringarr),IntLiteral(3)))),CallExpr(Id(checkval),List(BooleanLiteral(true),BooleanLiteral(false),IntLiteral(1),Id(a),StringLiteral(abc),ArrayCell(Id(arr),IntLiteral(0)))))))))

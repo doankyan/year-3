@@ -1,0 +1,5 @@
+
+        void main() {
+          if (getString(str[0])=="str") println("Finish"); else print();
+        }
+      

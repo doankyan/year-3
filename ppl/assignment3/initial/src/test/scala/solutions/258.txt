@@ -1,0 +1,1 @@
+Program(List(FuncDecl(Id(main),List(),VoidType,Block(List(),List(BinaryOp(=,Id(i),IntLiteral(1)),CallExpr(Id(foo),List(IntLiteral(1),IntLiteral(2))),CallExpr(Id(del),List(ArrayCell(Id(stack),IntLiteral(1)),BinaryOp(+,ArrayCell(Id(stack),IntLiteral(0)),IntLiteral(1)))),IntLiteral(100),CallExpr(Id(mul),List(StringLiteral(a),StringLiteral(b),StringLiteral(c))))))))

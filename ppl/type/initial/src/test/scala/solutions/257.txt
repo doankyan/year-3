@@ -1,0 +1,1 @@
+Program(List(FuncDecl(Id(main),List(),VoidType,Block(List(),List(For(BinaryOp(=,IntLiteral(1),IntLiteral(1)),BinaryOp(-,IntLiteral(1),IntLiteral(2)),BinaryOp(=,Id(a),StringLiteral(string)),Return(Some(CallExpr(Id(happy),List(IntLiteral(3)))))))))))

@@ -1,0 +1,132 @@
+
+    void evalu(int sec, int ){
+      if(met == true){
+        dingu();
+      }
+      else{
+        lamtiep();
+      }
+    }
+    int dequy(int a, int b, int x[]){
+        a = 9878;
+        b= 12345;
+        x = extends(a);
+        x = extends(b);
+        return dequy(x[1],x[2],dequy(x[1],x[2],0));
+
+        {
+          int sub;
+          int sup;
+          string chich;
+
+          if(sub < sup) sup = sup + chich;
+          else sub = sub + chich;
+        }
+        
+        if (i || false*90) dequy();
+        if(true) dequy(1,2,3);
+        else dequy(4,5,6);
+
+        a=b=c;
+        a=b=c=d=e>3*6/12%(1234+8907)+x[1];
+
+        return 0;
+      }
+
+      int ac,cd,e[100];
+      float number;
+
+      string chuoikytu(string a_cxs){
+        int chuoiso;
+        {
+          ac = 100;
+          cd = 1000;
+          e[1] = 30;
+          if(ac <= cd) e[1]=40;
+          else e[2] = "ahihi";
+        }
+        chuoiso = 1235/23*99+12.3e45%(126/s);
+        {
+          int ngocanh;
+          int hyomin;
+          ngocanh = "n"+"g"+"o"+"c"+"a"+"n"+"h";
+          hyomin = "h"+"y"+"o"+"m"+"i"+"n";
+          for(i = 0; i>1000; i = n*(m+1)/er-123%1234e54-44)
+           donothing("ahihi");
+        }
+        return "ahihi dongoc \n\t\b";
+      }
+      void main(){
+        string astring;
+        string bstring;
+        int a;
+        int b;
+        float c;
+        int arr[100];
+        float arr1[100];
+        string arrs[100];
+        if(len(arr) == len(arr1)) i = i %1;
+        else arr1[33]=arrs11 = arrs[90] + 12/4/3/8*756%arr1[78];
+
+        do
+          if(len(arr) != 1) i = i+ 1;
+        while(false);
+
+        for(i = 0; i<= len(arrs); i = i+90/7/5%67*0.11e-2)
+          if(i%2 == 1) continue;
+          else break;
+      }
+      int HANGSO;
+      int editConst(int HANGSO){
+        HANGSO = 10;
+        edit(10);
+        putIntLn(100);
+        putIntLn("chuoiso");
+        return;
+      }
+      int express;
+      void something(){
+        express = express+1;
+        foo(foo(1));
+        sum(sum(10),sum(15));
+      }
+
+      float def(int a, int v,float avc, string astr, int x[]){
+        astr = a+90;
+        x[1] = 999 + astr=v;
+
+        if(x[1]!=null) return 1.90;
+        else do a = a + 1;
+        avc = 1.3e4*3;
+        astr = "ahihi" + "dongoc";
+        x[1] = 1001;
+        while(1 ==1);
+
+        main();
+
+        if(true){
+          i = i + 2;
+          avc = "yebin-DIA";
+        }
+
+        do{
+          somestmt();
+        }while(false);
+
+        for(i = 0; i>=90;i = i+3e4){
+          dosome();
+          break;
+        }
+
+      }
+
+      void stop(){
+        metqua();
+        tamdung();
+        maiviettiep();
+        testcase = dung*roi+lam/khong%noi(nua+di*(ia/thoi));
+        variable = testcase=metqua();
+        return;
+      }
+
+        

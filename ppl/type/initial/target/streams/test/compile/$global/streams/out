@@ -1,0 +1,88 @@
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\test\scala\TestAst.scala:22:23: not found: type TestUtils[0m
+[0m[[0m[31merror[0m] [0m[0mtrait TestAst extends TestUtils {[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\test\scala\TestAst.scala:38:18: not found: value makeSource[0m
+[0m[[0m[31merror[0m] [0m[0m    val source = makeSource(input,num)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\test\scala\TestAst.scala:39:44: not found: value soldir[0m
+[0m[[0m[31merror[0m] [0m[0m    val dest = new PrintWriter(new File(s"$soldir$sepa$num.txt"))[0m
+[0m[[0m[31merror[0m] [0m[0m                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\test\scala\TestAst.scala:39:51: not found: value sepa[0m
+[0m[[0m[31merror[0m] [0m[0m    val dest = new PrintWriter(new File(s"$soldir$sepa$num.txt"))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\test\scala\TestAst.scala:42:9: not found: value timeoutAfter[0m
+[0m[[0m[31merror[0m] [0m[0m        timeoutAfter(500) {[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\test\scala\TestAst.scala:56:37: not found: value soldir[0m
+[0m[[0m[31merror[0m] [0m[0m    val result = Source.fromFile(s"$soldir$sepa$num.txt").getLines.mkString("")[0m
+[0m[[0m[31merror[0m] [0m[0m                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\test\scala\TestAst.scala:56:44: not found: value sepa[0m
+[0m[[0m[31merror[0m] [0m[0m    val result = Source.fromFile(s"$soldir$sepa$num.txt").getLines.mkString("")[0m
+[0m[[0m[31merror[0m] [0m[0m                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\test\scala\TestChecker.scala:18:27: not found: type TestUtils[0m
+[0m[[0m[31merror[0m] [0m[0mtrait TestChecker extends TestUtils {[0m
+[0m[[0m[31merror[0m] [0m[0m                          ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\test\scala\TestChecker.scala:69:18: not found: value makeSource[0m
+[0m[[0m[31merror[0m] [0m[0m    val source = makeSource(input,num)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\test\scala\TestChecker.scala:46:44: not found: value soldir[0m
+[0m[[0m[31merror[0m] [0m[0m    val dest = new PrintWriter(new File(s"$soldir$sepa$num.txt"))[0m
+[0m[[0m[31merror[0m] [0m[0m                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\test\scala\TestChecker.scala:46:51: not found: value sepa[0m
+[0m[[0m[31merror[0m] [0m[0m    val dest = new PrintWriter(new File(s"$soldir$sepa$num.txt"))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\test\scala\TestChecker.scala:49:7: not found: value timeoutAfter[0m
+[0m[[0m[31merror[0m] [0m[0m      timeoutAfter(500) {[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\test\scala\TestChecker.scala:59:37: not found: value soldir[0m
+[0m[[0m[31merror[0m] [0m[0m    val result = Source.fromFile(s"$soldir$sepa$num.txt").getLines.mkString("")   [0m
+[0m[[0m[31merror[0m] [0m[0m                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\test\scala\TestChecker.scala:59:44: not found: value sepa[0m
+[0m[[0m[31merror[0m] [0m[0m    val result = Source.fromFile(s"$soldir$sepa$num.txt").getLines.mkString("")   [0m
+[0m[[0m[31merror[0m] [0m[0m                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\test\scala\TestLexer.scala:18:43: not found: type TestUtils[0m
+[0m[[0m[31merror[0m] [0m[0mtrait TestLexer extends ProcessError with TestUtils {[0m
+[0m[[0m[31merror[0m] [0m[0m                                          ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\test\scala\TestLexer.scala:36:18: not found: value makeSource[0m
+[0m[[0m[31merror[0m] [0m[0m    val source = makeSource(input,num)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\test\scala\TestLexer.scala:37:44: not found: value soldir[0m
+[0m[[0m[31merror[0m] [0m[0m    val dest = new PrintWriter(new File(s"$soldir$sepa$num.txt"))[0m
+[0m[[0m[31merror[0m] [0m[0m                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\test\scala\TestLexer.scala:37:51: not found: value sepa[0m
+[0m[[0m[31merror[0m] [0m[0m    val dest = new PrintWriter(new File(s"$soldir$sepa$num.txt"))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\test\scala\TestLexer.scala:39:7: not found: value timeoutAfter[0m
+[0m[[0m[31merror[0m] [0m[0m      timeoutAfter(100) {[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\test\scala\TestLexer.scala:49:37: not found: value soldir[0m
+[0m[[0m[31merror[0m] [0m[0m    val result = Source.fromFile(s"$soldir$sepa$num.txt").getLines.mkString(",")[0m
+[0m[[0m[31merror[0m] [0m[0m                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\test\scala\TestLexer.scala:49:44: not found: value sepa[0m
+[0m[[0m[31merror[0m] [0m[0m    val result = Source.fromFile(s"$soldir$sepa$num.txt").getLines.mkString(",")[0m
+[0m[[0m[31merror[0m] [0m[0m                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\test\scala\TestParser.scala:19:44: not found: type TestUtils[0m
+[0m[[0m[31merror[0m] [0m[0mtrait TestParser extends ProcessError with TestUtils {[0m
+[0m[[0m[31merror[0m] [0m[0m                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\test\scala\TestParser.scala:52:18: not found: value makeSource[0m
+[0m[[0m[31merror[0m] [0m[0m    val source = makeSource(input,num)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\test\scala\TestParser.scala:53:44: not found: value soldir[0m
+[0m[[0m[31merror[0m] [0m[0m    val dest = new PrintWriter(new File(s"$soldir$sepa$num.txt"))[0m
+[0m[[0m[31merror[0m] [0m[0m                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\test\scala\TestParser.scala:53:51: not found: value sepa[0m
+[0m[[0m[31merror[0m] [0m[0m    val dest = new PrintWriter(new File(s"$soldir$sepa$num.txt"))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\test\scala\TestParser.scala:55:7: not found: value timeoutAfter[0m
+[0m[[0m[31merror[0m] [0m[0m      timeoutAfter(1000) {[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\test\scala\TestParser.scala:65:37: not found: value soldir[0m
+[0m[[0m[31merror[0m] [0m[0m    val result = Source.fromFile(s"$soldir$sepa$num.txt").getLines.mkString(",")[0m
+[0m[[0m[31merror[0m] [0m[0m                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\test\scala\TestParser.scala:65:44: not found: value sepa[0m
+[0m[[0m[31merror[0m] [0m[0m    val result = Source.fromFile(s"$soldir$sepa$num.txt").getLines.mkString(",")[0m
+[0m[[0m[31merror[0m] [0m[0m                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\type\initial\src\test\scala\TestChecker.scala:64:18: not found: value makeSource[0m
+[0m[[0m[31merror[0m] [0m[0m    val source = makeSource(input.toString,num)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m29 errors found[0m

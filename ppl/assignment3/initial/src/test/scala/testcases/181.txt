@@ -1,0 +1,39 @@
+
+    void evalu(int sec, int hours){
+      if(met == true){
+        dingu();
+      }
+      else{
+        lamtiep();
+      }
+    }
+    int dequy(int a, int b, int x[]){
+        a = 9878;
+        b= 12345;
+        x = extends(a);
+        x = extends(b);
+        return dequy(x[1],x[2],dequy(x[1],x[2],0));
+
+        {
+          int sub;
+          int sup;
+          string chich;
+
+          if(true) a = b;
+          else sub = sub + chich;
+        }
+        
+        if (true || false*90) dequy();
+        if(true) dequy(1,2,3);
+        else dequy(4,5,6);
+
+        a=b=c;
+        a=b=c=d=>3*6/12%(1234+8907)+x[1];
+
+        return 0;
+      }
+
+      int ac,cd,e[100];
+      float xs;
+
+        

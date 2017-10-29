@@ -1,0 +1,1 @@
+Program(List(FuncDecl(Id(main),List(),VoidType,Block(List(),List(If(UnaryOp(-,IntLiteral(1)),Return(None),None))))))

@@ -1,0 +1,7 @@
+
+        void main (){
+          sum(1,2,1.23);
+          strcom("str",stringarr[3]);
+          checkval(true,false,1,a,"abc",arr[0]);
+        }
+      

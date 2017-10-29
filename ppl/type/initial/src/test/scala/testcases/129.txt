@@ -1,0 +1,56 @@
+
+    int  a;
+    int _ahihi;
+
+    void main () {
+      if (1==2) b = 9;
+      else b = "string";
+      do
+       c = 1+1;
+       ahihi = "dongoc";
+       break;
+       good = "job\t";
+      while 9 >0;
+
+      sum();
+      
+      for ( i =1; i <= n; i = i+ 1)
+        a = a + 1;
+      }
+
+      int sum(int a){
+        if(!a) sum();
+        return 0;
+        a = (a+b)*c/d-(abc%12)+67;
+        bc = true;
+      }
+
+      string chuoi(){
+        sum(b);
+        dosome(1.23);
+        {
+          int a;
+          float b;
+          string a;
+          boolean boo ;
+          a=b=c;
+          if(a==c>d) sum();
+
+          for(a =0 ; a <=9; a = a + 1) break;
+
+          array[9];
+
+          a = -90;
+          a = 91;
+          dosome(x[3],y[9]);
+          
+          a = "aaaa\' do some\'";
+          
+          boo = false;
+
+        }
+        
+      }
+      float[] dosome (float x[], int y[]){
+        return x*y;
+      }

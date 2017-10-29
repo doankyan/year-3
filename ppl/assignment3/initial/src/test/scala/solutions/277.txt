@@ -1,0 +1,1 @@
+Program(List(FuncDecl(Id(sum),List(VarDecl(Id(a),ArrayPointerType(IntType)),VarDecl(Id(b),ArrayPointerType(FloatType)),VarDecl(Id(c),ArrayPointerType(StringType)),VarDecl(Id(d),ArrayPointerType(BoolType))),IntType,Block(List(),List()))))

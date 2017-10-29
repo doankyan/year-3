@@ -1,0 +1,1 @@
+int main () {do 1; true; "c"; d; while (size[b[f]]*1.6/abc[3-9%f])*3;}

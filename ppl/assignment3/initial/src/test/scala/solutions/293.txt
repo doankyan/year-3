@@ -1,0 +1,1 @@
+Program(List(FuncDecl(Id(main),List(),VoidType,Block(List(),List(If(BinaryOp(==,CallExpr(Id(copy),List(Id(a),Id(b))),BooleanLiteral(true)),CallExpr(Id(println),List(StringLiteral(Done))),None))))))

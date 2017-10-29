@@ -1,0 +1,5 @@
+
+        void main() {
+          do rec()+res(); find(lowest(1,2,4))-find(highest("215")); while cond()!= true;
+        }
+      

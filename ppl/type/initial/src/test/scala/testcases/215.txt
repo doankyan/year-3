@@ -1,0 +1,6 @@
+void main () {
+      boolean b;
+      int i,j[5];
+      i=3;
+      if (i>0) putInt(i);
+    }

@@ -1,0 +1,1 @@
+void main () {for(1=1;1-2;a="string") return happy(3);}

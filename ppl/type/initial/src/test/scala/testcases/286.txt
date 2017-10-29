@@ -1,0 +1,6 @@
+
+        int[] cal (){}
+        float[] mul (){}
+        string[] sep (){}
+        boolean[] check (){}
+      
