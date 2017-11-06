@@ -1,1 +1,11 @@
-void main () {writeIntLn(3);}
+int a;
+                   int main( int r) {
+                    int m;
+                    {
+                      int p;
+                    }
+                   }
+                   void func(int a, boolean a){
+                    int b;
+                   }
+                

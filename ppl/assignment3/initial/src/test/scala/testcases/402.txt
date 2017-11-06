@@ -1,1 +1,3 @@
-void main () {getInt(3);}
+int a,b,c;
+                    float a;
+                

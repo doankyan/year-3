@@ -18,8 +18,9 @@ class AstSuite extends FunSuite with TestAst {
   }
 
   test("a simple program with var declare") {
-    val input = "int a,b;"
-    val expected = Program(List(VarDecl(Id("a"),IntType),VarDecl(Id("b"),IntType)))
+    val input = """int a,b;
+                  void main(int a, int b){}"""
+    val expected = Program(List(VarDecl(Id("a"),IntType),VarDecl(Id("b"),IntType),FuncDecl(Id("main"),List(VarDecl(Id("a"),IntType),VarDecl(Id("b"),IntType)),VoidType,Block(List(),List()))))
     assert(checkAst(input,expected,203))
   }
 

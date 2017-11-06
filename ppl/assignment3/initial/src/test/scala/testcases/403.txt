@@ -1,1 +1,1 @@
-void main () {putIntLn();}
+int main(int a, int b){}

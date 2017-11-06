@@ -93,3 +93,5 @@ compile
 testOnly CheckerSuite
 compile
 testOnly CheckerSuite
+compile
+testOnly CheckerSuite

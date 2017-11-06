@@ -28,7 +28,7 @@ trait TestChecker extends TestUtils {
   def test(ast:AST,outfile:PrintWriter) = {
     val checker = new StaticChecker(ast)
     try {
-        checker.check()
+        outfile.println(checker.check());
     } catch {
       case Undeclared(k, n)  => outfile.println("Undeclared "+k+": "+n)
       case Redeclared(k, n)  => outfile.println("Redeclared "+k+": "+n)

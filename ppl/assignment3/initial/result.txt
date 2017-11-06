@@ -1,17 +1,11 @@
 Run starting. Expected test count is: 0
 CheckerSuite:
-- Undeclared Function *** FAILED ***
-  CheckerSuite.this.checkCkr(input, expected, 401) was false (CheckerSuite.scala:12)
-- Type Mismatch In Expression: getInt *** FAILED ***
-  CheckerSuite.this.checkCkr(input, expected, 402) was false (CheckerSuite.scala:17)
-- Type Mismatch In Expression: putIntLn *** FAILED ***
-  CheckerSuite.this.checkCkr(input, expected, 403) was false (CheckerSuite.scala:23)
-- Check with AST *** FAILED ***
-  CheckerSuite.this.checkAst(input, expected, 404) was false (CheckerSuite.scala:32)
-- Check with AST putIntLn with float *** FAILED ***
-  CheckerSuite.this.checkAst(input, expected, 405) was false (CheckerSuite.scala:41)
-Run completed in 875 milliseconds.
-Total number of tests run: 5
+- Var and Func Decl *** FAILED ***
+  CheckerSuite.this.checkCkr(input, expected, 401) was false (CheckerSuite.scala:22)
+- Var and Func Decl 2 *** FAILED ***
+  CheckerSuite.this.checkCkr(input, expected, 402) was false (CheckerSuite.scala:29)
+Run completed in 411 milliseconds.
+Total number of tests run: 2
 Suites: completed 1, aborted 0
-Tests: succeeded 0, failed 5, canceled 0, ignored 0, pending 0
-*** 5 TESTS FAILED ***
+Tests: succeeded 0, failed 2, canceled 0, ignored 0, pending 0
+*** 2 TESTS FAILED ***

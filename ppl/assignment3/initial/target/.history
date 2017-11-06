@@ -45,3 +45,366 @@ test
 exit
 compile
 testOnly CheckerSuite
+compile
+test
+testOnly CheckerSuite
+clean
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+testOnly AstSuite
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+testOnly AstSuite
+comile
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+testOnly Atsuite
+testOnly Astsuite
+testOnly AstSuite
+compile
+testOnly AstSuite
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+cleaan
+clean
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+clean
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
