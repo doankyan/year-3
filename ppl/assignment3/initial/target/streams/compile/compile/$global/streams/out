@@ -1,4 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\assignment3\initial\src\main\mc\checker\StaticCheck.scala:89:42: value tmt is not a member of mc.utils.Block[0m
-[0m[[0m[31merror[0m] [0m[0m            ast.body.asInstanceOf[Block].tmt.filter(_.isInstanceOf[Block]).map(_.accept(this,env))[0m
-[0m[[0m[31merror[0m] [0m[0m                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\assignment3\initial\src\main\mc\checker\StaticCheck.scala:131:103: forward reference extends over definition of value env[0m
+[0m[[0m[31merror[0m] [0m[0m    override def visitFor(ast: For, c: Any): Any = { throw FunctionNotReturn(""+ast.expr1.accept(this,env))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                      ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

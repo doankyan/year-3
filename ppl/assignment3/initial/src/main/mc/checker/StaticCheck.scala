@@ -53,13 +53,12 @@ class StaticChecker(ast:AST) extends BaseVisitor with Utils {
         val env = List(t_Symbols)
         ast.decl.filter(_.isInstanceOf[FuncDecl]).map(_.accept(this,env)
         )
-        //t_Symbols
+        env
 		}
 
 	override def visitFuncDecl(ast: FuncDecl, c: Any): Any = {
         
         val env = c.asInstanceOf[List[List[Symbol]]]
-
         //Tao List[Symbol]() cho parameter
         val temp_Symbols = ast.param.foldLeft(List[Symbol]())((L,x) =>
             if(lookup(x.variable.name,L,getName_of_Symbol) != None) 
@@ -86,11 +85,8 @@ class StaticChecker(ast:AST) extends BaseVisitor with Utils {
                     }
                 }
             )
-            ast.body.asInstanceOf[Block].stmt.filter(_.isInstanceOf[Block]).map(_.accept(this,env))
-
+            ast.body.asInstanceOf[Block].stmt.map(_.accept(this,env))
         }
-
-
         //truyen lai env Function
         env
 	}
@@ -110,10 +106,84 @@ class StaticChecker(ast:AST) extends BaseVisitor with Utils {
                     throw Redeclared(Function,i.name)
             }
         })
+        //truyen moi truong moi cho moi stmt
         ast.stmt.filter(_.isInstanceOf[Block]).map(_.accept(this,t_Symbols::env))
         //return env cu
         env
-
     }
+    override def visitIf(ast:If, c: Any): Any = {
+        val env = c.asInstanceOf[List[List[Symbol]]]
+        //xu ly boolean
+        if(ast.expr.accept(this,env).toString() != "BoolType") 
+            throw TypeMismatchInStatement(ast)
+
+
+
+        //xu ly thenstmt
+        ast.thenStmt.accept(this,env)
+        //xy ly elseStmt
+        if(ast.elseStmt != None)
+            ast.elseStmt.asInstanceOf[Stmt].accept(this,env)
+
+        //return
+        env
+    }
+    override def visitFor(ast: For, c: Any): Any = { 
+        val env = c.asInstanceOf[List[List[Symbol]]]
+        //xu ly expr1
+        if(ast.expr1.accept(this,env).toString() != "IntType")
+            throw TypeMismatchInStatement(ast)
+        //xu ly expr3
+        if(ast.expr3.accept(this,env).toString() != "IntType") 
+            throw TypeMismatchInStatement(ast)
+        //xu ly expr2
+        if(ast.expr2.accept(this,env).toString() != "BoolType") 
+            throw TypeMismatchInStatement(ast)
+        //visit look
+        ast.loop.accept(this,env)
+        //return env
+        env
+    }
+    override def visitBreak(ast: Break.type, c: Any): Any = {
+        val env = c.asInstanceOf[List[List[Symbol]]]
+        //return 
+        env
+    }
+    override def visitContinue(ast: Continue.type, c: Any): Any = {
+        val env = c.asInstanceOf[List[List[Symbol]]]
+        //return
+        env
+    }
+    override def visitReturn(ast: Return, c: Any): Any = {
+        val env = c.asInstanceOf[List[List[Symbol]]]
+        //return env
+        env
+    }
+    override def visitDowhile(ast: Dowhile, c:Any): Any = {
+        val env = c.asInstanceOf[List[List[Symbol]]]
+        //return env
+        env
+    }
+
+
+    override def visitBinaryOp(ast: BinaryOp, c: Any): Any = {
+        val env = c.asInstanceOf[List[List[Symbol]]]
+        
+        //return env
+        env
+    }
+    override def visitUnaryOp(ast: UnaryOp, c: Any): Any = {
+         val env = c.asInstanceOf[List[List[Symbol]]]
+        //return env
+        env
+    }
+    override def visitCallExpr(ast: CallExpr, c: Any): Any = null
+
+    override def visitIntLiteral(ast: IntLiteral, c: Any): Any = IntType
+    override def visitFloatLiteral(ast: FloatLiteral, c: Any): Any = FloatType
+    override def visitStringLiteral(ast: StringLiteral, c: Any): Any = StringType
+    override def visitBooleanLiteral(ast: BooleanLiteral, c: Any): Any = BoolType
+    override def visitArrayType(ast: ArrayType, c: Any): Any = ast
+    override def visitArrayPointerType(ast:ArrayPointerType, c: Any): Any = ast
     	
 }

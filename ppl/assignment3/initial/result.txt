@@ -1,11 +1,15 @@
 Run starting. Expected test count is: 0
 CheckerSuite:
-- Var and Func Decl *** FAILED ***
-  CheckerSuite.this.checkCkr(input, expected, 401) was false (CheckerSuite.scala:22)
-- Var and Func Decl 2 *** FAILED ***
-  CheckerSuite.this.checkCkr(input, expected, 402) was false (CheckerSuite.scala:29)
-Run completed in 411 milliseconds.
-Total number of tests run: 2
+- 1: Redeclared VarDecl Global
+- 2: Redeclared FuncDecl
+- 3: Redeclared Parameter
+- 4: Redeclared Variable in Function
+- 5: Redeclared Variable in Block of Function
+- 6: Redeclared Variable in Block of Function 2
+- TestDemo *** FAILED ***
+  CheckerSuite.this.checkCkr(input, expected, 407) was false (CheckerSuite.scala:78)
+Run completed in 508 milliseconds.
+Total number of tests run: 7
 Suites: completed 1, aborted 0
-Tests: succeeded 0, failed 2, canceled 0, ignored 0, pending 0
-*** 2 TESTS FAILED ***
+Tests: succeeded 6, failed 1, canceled 0, ignored 0, pending 0
+*** 1 TEST FAILED ***

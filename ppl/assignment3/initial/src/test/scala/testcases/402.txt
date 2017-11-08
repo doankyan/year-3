@@ -1,3 +1,5 @@
-int a,b,c;
-                    float a;
+int a;
+                    int main(){}
+                    int b;
+                    void main(){}
                 

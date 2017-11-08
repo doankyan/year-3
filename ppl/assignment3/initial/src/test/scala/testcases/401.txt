@@ -1,11 +1,2 @@
-int a;
-                   int main( int r) {
-                    int m;
-                    {
-                      int p;
-                    }
-                   }
-                   void func(int a, boolean a){
-                    int b;
-                   }
+int a,b,a;
                 

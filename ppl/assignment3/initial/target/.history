@@ -408,3 +408,82 @@ compile
 testOnly CheckerSuite
 compile
 testOnly CheckerSuite
+compile
+tetsOnly CheckerSuite
+testOnly CheckerSuite
+tetsOnly CheckerSuite
+testOnly CheckerSuite
+Khi em có m?t g?i hàm function(1,2), n?u không h? có 1 khai báo nào c?a hàm function thì em s? ném ra l?i Undeclared Function: function; còn trong tr??ng h?p có khai báo hàm function 
+compiel
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
