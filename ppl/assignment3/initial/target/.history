@@ -90,30 +90,6 @@ testOnly CheckerSuite
 compile
 testOnly CheckerSuite
 compile
-testOnly CheckerSuite
-compile
-testOnly CheckerSuite
-compile
-testOnly CheckerSuite
-compile
-testOnly CheckerSuite
-compile
-testOnly CheckerSuite
-compile
-testOnly CheckerSuite
-compile
-testOnly CheckerSuite
-compile
-testOnly CheckerSuite
-compile
-testOnly CheckerSuite
-compile
-testOnly CheckerSuite
-compile
-testOnly CheckerSuite
-compile
-testOnly CheckerSuite
-compile
 tetsOnly CheckerSuite
 testOnly CheckerSuite
 tetsOnly CheckerSuite
@@ -194,6 +170,30 @@ compile
 testOnly CheckerSuite
 compile
 clean
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
 compile
 testOnly CheckerSuite
 compile

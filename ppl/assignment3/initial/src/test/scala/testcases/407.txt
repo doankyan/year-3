@@ -1,12 +1,12 @@
 
-                  int[] main(){
+                  string[] main(int var){
                     int a;
                     a + 2;
                     return 3;
                   }
                   int func(float m[], int p[]){
                     float a;
-                    -true;
+                    a+4-2+(-3)== main(true)[2];
                     return p[1];
                   }
                   

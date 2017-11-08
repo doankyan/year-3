@@ -176,13 +176,34 @@ class StaticChecker(ast:AST) extends BaseVisitor with Utils {
 
     }
     def check_UnaryNot(ast:UnaryOp, c: Any): Type = {
-         val env = c.asInstanceOf[List[List[Symbol]]]
+        val env = c.asInstanceOf[List[List[Symbol]]]
         val typeUnary = ast.body.accept(this,env).asInstanceOf[Type]
         val x = typeUnary.toString()
         (x) match {
             case("BoolType") => BoolType
             case _ =>throw TypeMismatchInExpression(ast)           
         }
+    }
+    def checkParamOfFunc(funcType:Type,returnType:Type): Boolean = { 
+        if(funcType.isInstanceOf[ArrayPointerType]){ 
+            if(returnType.isInstanceOf[ArrayType]) 
+                return checkReturnOfFunc(funcType.asInstanceOf[ArrayPointerType].eleType, returnType.asInstanceOf[ArrayType].eleType)
+            if(returnType.isInstanceOf[ArrayPointerType]) 
+                return checkReturnOfFunc(funcType.asInstanceOf[ArrayPointerType].eleType, returnType.asInstanceOf[ArrayPointerType].eleType)
+            return false
+        }else{
+            if(returnType.isInstanceOf[ArrayType]||returnType.isInstanceOf[ArrayPointerType]) return false
+            val x = funcType.toString()
+            val y  = returnType.toString()
+            (x,y) match {
+                case("BoolType","BoolType") => true
+                case("StringTye","StringTye") => true
+                case("FloatType","FloatType") => true
+                case("FloatType","IntType") => true
+                case("IntType","IntType") => true
+                case _ => false
+                }
+            }
     }
 
     override def visitProgram(ast: Program, c: Any): Any = {
@@ -350,13 +371,12 @@ class StaticChecker(ast:AST) extends BaseVisitor with Utils {
         if(ast.op == "%") return check_mod(ast,env)
     }
     override def visitUnaryOp(ast: UnaryOp, c: Any): Any = {
-         val env = c.asInstanceOf[List[List[Symbol]]]
+        val env = c.asInstanceOf[List[List[Symbol]]]
         // //Check Undeclared
         // ast.body.accept(this,env)
         //return type
         if(ast.op == "-") return check_UnarySub(ast,env)
         if(ast.op == "!") return check_UnaryNot(ast,env)
-
     }
     override def visitArrayCell(ast: ArrayCell, c: Any): Any = {
         val env = c.asInstanceOf[List[List[Symbol]]]
@@ -374,25 +394,31 @@ class StaticChecker(ast:AST) extends BaseVisitor with Utils {
             }
             else throw TypeMismatchInExpression(ast)
         }  
-
     }
     override def visitCallExpr(ast: CallExpr, c: Any): Any = {
         val env =  c.asInstanceOf[List[List[Symbol]]]
         //Check Undeclared Function 
         if(checkUndeclaredIdentifier(ast.method,env) == true)
             throw Undeclared(Function,ast.method.name)
+
         //check TypeMismatchInExpression
         val list_symbol = env.flatten
         val symbolOfId = lookup(ast.method.name,list_symbol,getName_of_Symbol).get
         //check so luong parameter
         val sizeArgument = ast.params.size
-        val sizeParameter = symbolOfId.typ.asInstanceOf[List[Type]].size
+        val sizeParameter = symbolOfId.typ.asInstanceOf[FunctionType].input.asInstanceOf[List[Type]].size
         if(sizeArgument != sizeParameter)
             throw TypeMismatchInExpression(ast)
+
         //check kieu cua tung tham so
+        val listType_Parameter = symbolOfId.typ.asInstanceOf[FunctionType].input.asInstanceOf[List[Type]]
+        val listType_Argument = ast.params.map(_.accept(this,env).asInstanceOf[Type])
+        if(listType_Parameter.zip(listType_Argument).forall(x=>checkParamOfFunc(x._1,x._2)) == false)
+            throw TypeMismatchInExpression(ast)
+        
 
         //return type
-        IntType
+        symbolOfId.typ.asInstanceOf[FunctionType].output
 
     }
     override def visitId(ast: Id, c: Any): Any = {
