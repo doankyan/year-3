@@ -1,93 +1,4 @@
 compile
-testOnly AstSuite
-testOnly ParserSuite
-testOnly AstSuite
-clean
-compile
-test
-clean
-compile
-testOnly AstSuite
-testOnly ParserSuite
-run -draw program ./src/test/scala/testcases/101.txt
-testOnly AstSuite
-testOnly ParserSuite
-run -draw program ./src/test/scala/testcases/101.txt
-testOnly ParserSuite
-run -draw program ./src/test/scala/testcases/101.txt
-testOnly ParserSuite
-run -draw program ./src/test/scala/testcases/101.txt
-testOnly ParserSuite
-run -draw program ./src/test/scala/testcases/101.txt
-testOnly ParserSuite
-run -draw program ./src/test/scala/testcases/101.txt
-testOnly ParserSuite
-run -draw program ./src/test/scala/testcases/101.txt
-testOnly ParserSuite
-clean
-compile
-testOnly ParserSuite
-run -draw program ./src/test/scala/testcases/101.txt
-testOnly ParserSuite
-run -draw program ./src/test/scala/testcases/101.txt
-compile
-testOnly ParserSuite
-compile
-testOnly ParserSuite
-testOnly AstSuite
-clean
-compile
-testOnly AstSuite
-clean
-test
-compile
-test
-exit
-compile
-testOnly CheckerSuite
-compile
-test
-testOnly CheckerSuite
-clean
-compile
-testOnly CheckerSuite
-compile
-testOnly CheckerSuite
-testOnly AstSuite
-testOnly CheckerSuite
-compile
-testOnly CheckerSuite
-compile
-testOnly CheckerSuite
-testOnly AstSuite
-comile
-compile
-testOnly CheckerSuite
-compile
-testOnly CheckerSuite
-compile
-testOnly CheckerSuite
-compile
-testOnly CheckerSuite
-compile
-testOnly CheckerSuite
-testOnly Atsuite
-testOnly Astsuite
-testOnly AstSuite
-compile
-testOnly AstSuite
-testOnly CheckerSuite
-compile
-testOnly CheckerSuite
-compile
-testOnly CheckerSuite
-compile
-testOnly CheckerSuite
-compile
-testOnly CheckerSuite
-compile
-testOnly CheckerSuite
-compile
 testOnly CheckerSuite
 compile
 testOnly CheckerSuite
@@ -415,6 +326,106 @@ tetsOnly CheckerSuite
 testOnly CheckerSuite
 Khi em có m?t g?i hàm function(1,2), n?u không h? có 1 khai báo nào c?a hàm function thì em s? ném ra l?i Undeclared Function: function; còn trong tr??ng h?p có khai báo hàm function 
 compiel
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+clean
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
 compile
 testOnly CheckerSuite
 compile

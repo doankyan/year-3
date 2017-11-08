@@ -69,7 +69,9 @@ class CheckerSuite extends FunSuite with TestChecker {
   test("TestDemo") {
     val input = """
                   void main(){
-                    for(1;2;1)a = 3;
+                    int a;
+                    for(2;true;2) a = 3;
+                    return;
                   }
                   
                   

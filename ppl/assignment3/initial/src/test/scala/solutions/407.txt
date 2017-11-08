@@ -1,1 +1,1 @@
-Type Mismatch In Statement: For(IntLiteral(1),IntLiteral(2),IntLiteral(1),BinaryOp(=,Id(a),IntLiteral(3)))
+List(List(Symbol(main,FunctionType(List(),VoidType),null)))

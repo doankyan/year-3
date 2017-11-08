@@ -1,4 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\assignment3\initial\src\main\mc\checker\StaticCheck.scala:131:103: forward reference extends over definition of value env[0m
-[0m[[0m[31merror[0m] [0m[0m    override def visitFor(ast: For, c: Any): Any = { throw FunctionNotReturn(""+ast.expr1.accept(this,env))[0m
-[0m[[0m[31merror[0m] [0m[0m                                                                                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\assignment3\initial\src\main\mc\checker\StaticCheck.scala:113:65: ';' expected but 'throw' found.[0m
+[0m[[0m[31merror[0m] [0m[0m                if(!x.isInstanceOf[Return]) {x.accept(this,env) throw FunctionNotReturn(""+env)}[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

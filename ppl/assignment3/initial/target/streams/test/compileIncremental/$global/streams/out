@@ -1,40 +1,8 @@
 [0m[[0m[0mdebug[0m] [0m[0mThe mc.checker.StaticChecker has the following regular definitions changed:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	UsedName(visitFloatLiteral,[Default]), UsedName(visitIntLiteral,[Default]), UsedName(visitBooleanLiteral,[Default]), UsedName(visitBinaryOp,[Default]), UsedName(visitStringLiteral,[Default]), UsedName(visitBreak,[Default]), UsedName(getName_of_Symbol,[Default]), UsedName(visitReturn,[Default]), UsedName(visitUnaryOp,[Default]), UsedName(visitDowhile,[Default]), UsedName(visitArrayType,[Default]), UsedName(visitVarDecl,[Default]), UsedName(visitCallExpr,[Default]), UsedName(visitIf,[Default]), UsedName(visitContinue,[Default]), UsedName(visitFor,[Default]), UsedName(visitArrayPointerType,[Default]), UsedName(visitBlock,[Default]).[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UsedName(getType,[Default]), UsedName(visitId,[Default]).[0m
 [0m[[0m[0mdebug[0m] [0m[0mAll member reference dependencies will be considered within this context.[0m
 [0m[[0m[0mdebug[0m] [0m[0mFiles invalidated by inheriting from (external) mc.checker.StaticChecker: Set(); now invalidating by inheritance (internally).[0m
 [0m[[0m[0mdebug[0m] [0m[0mGetting direct dependencies of all classes transitively invalidated by inheritance.[0m
 [0m[[0m[0mdebug[0m] [0m[0mGetting classes that directly depend on (external) mc.checker.StaticChecker.[0m
 [0m[[0m[0mdebug[0m] [0m[0mNone of the modified names appears in source file of TestChecker. This dependency is not being considered for invalidation.[0m
-[0m[[0m[0mdebug[0m] [0m[0m[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial source changes: [0m
-[0m[[0m[0mdebug[0m] [0m[0m	removed:Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0m	added: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0m	modified: Set(E:\github\year-3\ppl\assignment3\initial\src\test\scala\CheckerSuite.scala)[0m
-[0m[[0m[0mdebug[0m] [0m[0mInvalidated products: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mExternal API changes: API Changes: Set(NamesChange(mc.checker.StaticChecker,ModifiedNames(changes = UsedName(visitFloatLiteral,[Default]), UsedName(visitIntLiteral,[Default]), UsedName(visitBooleanLiteral,[Default]), UsedName(visitBinaryOp,[Default]), UsedName(visitStringLiteral,[Default]), UsedName(visitBreak,[Default]), UsedName(getName_of_Symbol,[Default]), UsedName(visitReturn,[Default]), UsedName(visitUnaryOp,[Default]), UsedName(visitDowhile,[Default]), UsedName(visitArrayType,[Default]), UsedName(visitVarDecl,[Default]), UsedName(visitCallExpr,[Default]), UsedName(visitIf,[Default]), UsedName(visitContinue,[Default]), UsedName(visitFor,[Default]), UsedName(visitArrayPointerType,[Default]), UsedName(visitBlock,[Default]))))[0m
-[0m[[0m[0mdebug[0m] [0m[0mModified binary dependencies: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set(CheckerSuite)[0m
-[0m[[0m[0mdebug[0m] [0m[0m[0m
-[0m[[0m[0mdebug[0m] [0m[0mSources indirectly invalidated by:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	product: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0m	binary dep: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0m	external source: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated classes: Set(CheckerSuite)[0m
-[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated sources:Set(E:\github\year-3\ppl\assignment3\initial\src\test\scala\CheckerSuite.scala)[0m
-[0m[[0m[0minfo[0m] [0m[0mCompiling 1 Scala source to E:\github\year-3\ppl\assignment3\initial\target\scala-2.12\test-classes ...[0m
-[0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.12:1.0.1:compile for Scala 2.12.3[0m
-[0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.12:1.0.1:compile for Scala 2.12.3[0m
-[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 1e1f49a5 for Scala compiler version 2.12.3[0m
-[0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	-bootclasspath[0m
-[0m[[0m[0mdebug[0m] [0m[0m	C:\Program Files\Java\jdk1.8.0_144\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_144\jre\classes;C:\Users\Doan Ky An\.sbt\boot\scala-2.12.3\lib\scala-library.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
-[0m[[0m[0mdebug[0m] [0m[0m	E:\github\year-3\ppl\assignment3\initial\target\scala-2.12\test-classes;E:\github\year-3\ppl\assignment3\initial\target\scala-2.12\classes;E:\github\year-3\ppl\assignment3\initial\.\external\antlr-4.6-complete.jar;E:\github\year-3\ppl\assignment3\initial\.\external\jasmin.jar;C:\Users\Doan Ky An\.ivy2\cache\org.scalatest\scalatest_2.12\bundles\scalatest_2.12-3.0.1.jar;C:\Users\Doan Ky An\.ivy2\cache\org.scalactic\scalactic_2.12\bundles\scalactic_2.12-3.0.1.jar;C:\Users\Doan Ky An\.sbt\boot\scala-2.12.3\lib\scala-reflect.jar;C:\Users\Doan Ky An\.ivy2\cache\org.scala-lang.modules\scala-xml_2.12\bundles\scala-xml_2.12-1.0.5.jar;C:\Users\Doan Ky An\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.12\bundles\scala-parser-combinators_2.12-1.0.4.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 0.413880272 s[0m
-[0m[[0m[0minfo[0m] [0m[0mDone compiling.[0m
-[0m[[0m[0mdebug[0m] [0m[0mNew invalidations:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mPreviously invalidated, but (transitively) depend on new invalidations:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mAll newly invalidated classes after taking into account (previously) recompiled classes:Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mNo changes[0m
