@@ -1,1 +1,1 @@
-List(List(Symbol(main,FunctionType(List(),VoidType),null)))
+Type Mismatch In Expression: UnaryOp(-,BooleanLiteral(true))

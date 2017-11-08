@@ -1,8 +1,13 @@
 
-                  void main(){
+                  int[] main(){
                     int a;
-                    for(2;true;2) a = 3;
-                    return;
+                    a + 2;
+                    return 3;
+                  }
+                  int func(float m[], int p[]){
+                    float a;
+                    -true;
+                    return p[1];
                   }
                   
                   

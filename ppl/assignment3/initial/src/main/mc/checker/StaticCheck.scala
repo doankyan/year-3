@@ -35,6 +35,14 @@ class StaticChecker(ast:AST) extends BaseVisitor with Utils {
 
     def getName_of_Symbol(x:Symbol) = x.name
 
+    def changeEnvFunction(name: Id, c: Any): Any = {
+        val env = c.asInstanceOf[List[List[Symbol]]]
+        env
+    }
+    def getFunctionType(c: Any): Type = {
+        val env = c.asInstanceOf[List[List[Symbol]]]
+        env.last(env.size-1).typ.asInstanceOf[FunctionType].output
+    }
     def checkReturnOfFunc(funcType:Type,returnType:Type): Boolean = { 
         if(funcType.isInstanceOf[ArrayPointerType]){ 
             if(returnType.isInstanceOf[ArrayType]) 
@@ -57,6 +65,125 @@ class StaticChecker(ast:AST) extends BaseVisitor with Utils {
                 }
             }
     }
+    def checkUndeclaredIdentifier(expr: Id, c: Any): Boolean = { 
+
+        val list_symbol = c.asInstanceOf[List[List[Symbol]]].flatten
+        if(lookup(expr.name, list_symbol, getName_of_Symbol) == None) true
+        else false
+    }
+    def checkAssign(ast: BinaryOp, c: Any): Type = {
+        val env = c.asInstanceOf[List[List[Symbol]]]
+        val typeLeft = ast.left.accept(this,env).asInstanceOf[Type]
+        val typeRight = ast.right.accept(this,env).asInstanceOf[Type]
+        if(typeLeft.isInstanceOf[ArrayPointerType])
+            throw TypeMismatchInExpression(ast)
+        else if(typeLeft.isInstanceOf[ArrayType])
+            throw TypeMismatchInExpression(ast)
+        else{
+            val x = typeLeft.toString()
+            val y  = typeRight.toString()
+            (x,y) match {
+                case("BoolType","BoolType") => typeLeft
+                case("StringTye","StringTye") => typeLeft
+                case("FloatType","FloatType") => typeLeft
+                case("FloatType","IntType") => typeLeft
+                case("IntType","IntType") => typeLeft
+                case("VoidType","VoidType") => typeLeft
+                case _ => throw TypeMismatchInExpression(ast)
+                }
+            }
+    }
+    def check_add_sub_div_mul(ast:BinaryOp, c:Any): Type = {
+
+        val env = c.asInstanceOf[List[List[Symbol]]]
+        val typeLeft = ast.left.accept(this,env).asInstanceOf[Type]
+        val typeRight = ast.right.accept(this,env).asInstanceOf[Type]
+        val x = typeLeft.toString()
+        val y = typeRight.toString()
+        (x,y) match {
+            case("FloatType","FloatType") => FloatType
+            case("FloatType","IntType") => FloatType
+            case("IntType","IntType") => IntType
+            case("IntType","FloatType") => FloatType
+            case _ =>throw TypeMismatchInExpression(ast)           
+        }
+
+    }
+    def check_equal_notequal(ast:BinaryOp,c:Any): Type = {
+        
+        val env = c.asInstanceOf[List[List[Symbol]]]
+        val typeLeft = ast.left.accept(this,env).asInstanceOf[Type]
+        val typeRight = ast.right.accept(this,env).asInstanceOf[Type]
+        val x = typeLeft.toString()
+        val y = typeRight.toString()
+        (x,y) match {
+            case("FloatType","FloatType") => BoolType
+            case("FloatType","IntType") => BoolType
+            case("IntType","IntType") => BoolType
+            case("IntType","FloatType") => BoolType
+            case("Boolean","Boolean") => BoolType
+            case _ =>throw TypeMismatchInExpression(ast)           
+        }
+    }
+    def check_compare(ast:BinaryOp,c:Any): Type = {
+        
+        val env = c.asInstanceOf[List[List[Symbol]]]
+        val typeLeft = ast.left.accept(this,env).asInstanceOf[Type]
+        val typeRight = ast.right.accept(this,env).asInstanceOf[Type]
+        val x = typeLeft.toString()
+        val y = typeRight.toString()
+        (x,y) match {
+            case("FloatType","FloatType") => BoolType
+            case("FloatType","IntType") => BoolType
+            case("IntType","IntType") => BoolType
+            case("IntType","FloatType") => BoolType
+            case _ =>throw TypeMismatchInExpression(ast)           
+        }
+    }
+    def check_logicAnd_logicOr(ast:BinaryOp,c:Any): Type = {
+        
+        val env = c.asInstanceOf[List[List[Symbol]]]
+        val typeLeft = ast.left.accept(this,env).asInstanceOf[Type]
+        val typeRight = ast.right.accept(this,env).asInstanceOf[Type]
+        val x = typeLeft.toString()
+        val y = typeRight.toString()
+        (x,y) match {
+            case("BoolType","BoolType") => BoolType
+            case _ =>throw TypeMismatchInExpression(ast)           
+        }
+    }
+    def check_mod(ast:BinaryOp,c:Any): Type = {
+        val env = c.asInstanceOf[List[List[Symbol]]]
+        val typeLeft = ast.left.accept(this,env).asInstanceOf[Type]
+        val typeRight = ast.right.accept(this,env).asInstanceOf[Type]
+        val x = typeLeft.toString()
+        val y = typeRight.toString()
+        (x,y) match {
+            case("IntType","IntType") => IntType
+            case _ =>throw TypeMismatchInExpression(ast)           
+        }
+
+    }
+    def check_UnarySub(ast:UnaryOp, c: Any): Type = {
+        val env = c.asInstanceOf[List[List[Symbol]]]
+        val typeUnary = ast.body.accept(this,env).asInstanceOf[Type]
+        val x = typeUnary.toString()
+        (x) match {
+            case("IntType") => IntType
+            case("FloatType") => FloatType
+            case _ =>throw TypeMismatchInExpression(ast)           
+        }
+
+    }
+    def check_UnaryNot(ast:UnaryOp, c: Any): Type = {
+         val env = c.asInstanceOf[List[List[Symbol]]]
+        val typeUnary = ast.body.accept(this,env).asInstanceOf[Type]
+        val x = typeUnary.toString()
+        (x) match {
+            case("BoolType") => BoolType
+            case _ =>throw TypeMismatchInExpression(ast)           
+        }
+    }
 
     override def visitProgram(ast: Program, c: Any): Any = {
         val t_Symbols = ast.decl.foldLeft(List[Symbol]())((L,y) => y match {
@@ -74,13 +201,11 @@ class StaticChecker(ast:AST) extends BaseVisitor with Utils {
         })
         //return 
         val env = List(t_Symbols)
-        ast.decl.filter(_.isInstanceOf[FuncDecl]).map(_.accept(this,env)
-        )
+        ast.decl.filter(_.isInstanceOf[FuncDecl]).map(_.accept(this,env))
         env
 		}
 
 	override def visitFuncDecl(ast: FuncDecl, c: Any): Any = {
-        
         val env = c.asInstanceOf[List[List[Symbol]]]
 
         //Tao List[Symbol]() cho parameter
@@ -93,7 +218,7 @@ class StaticChecker(ast:AST) extends BaseVisitor with Utils {
 
         //truyen vao moi truong moi de kiem tra trong body Function
         if(ast.body.isInstanceOf[Block]){ 
-            ast.body.asInstanceOf[Block].decl.foldLeft(temp_Symbols)(
+            val temp2_Symbols = ast.body.asInstanceOf[Block].decl.foldLeft(temp_Symbols)(
                 (L,y) => y match {
                     case VarDecl(i,t) => { 
                         if(lookup(i.name,L, getName_of_Symbol) == None){
@@ -108,21 +233,20 @@ class StaticChecker(ast:AST) extends BaseVisitor with Utils {
                             throw Redeclared(Function,i.name)
                     }
                 }
-            )  
-            ast.body.asInstanceOf[Block].stmt.map((x:Stmt) =>
-                if(!x.isInstanceOf[Return]) x.accept(this,env)
-                else {  //check return Stmt
-                    if(checkReturnOfFunc(ast.returnType,x.asInstanceOf[Stmt].accept(this,env).asInstanceOf[Type]) == false)
-                        throw TypeMismatchInStatement(x.asInstanceOf[Return])
-
-                }   
+            )
+            val newenv = temp2_Symbols::env 
+            val returnenv = changeEnvFunction( ast.name, newenv
+            ) 
+            ast.body.asInstanceOf[Block].stmt.map((x:Stmt) =>  
+                if(x.isInstanceOf[Return]) x.accept(this,returnenv)
+                else x.accept(this,newenv)
                 )            
         }
         //truyen lai env Function
         env
 	}
 
-    override    def visitBlock(ast: Block, c: Any): Any = {
+    override def visitBlock(ast: Block, c: Any): Any = {
         val env = c.asInstanceOf[List[List[Symbol]]]
         val t_Symbols = ast.decl.foldLeft(List[Symbol]())((L,y) => y match {
             case VarDecl(i,t) => {
@@ -138,7 +262,7 @@ class StaticChecker(ast:AST) extends BaseVisitor with Utils {
             }
         })
         //truyen moi truong moi cho moi stmt
-        ast.stmt.filter(_.isInstanceOf[Block]).map(_.accept(this,t_Symbols::env))
+        ast.stmt.map(_.accept(this,t_Symbols::env))
         //return env cu
         env
     }
@@ -188,8 +312,16 @@ class StaticChecker(ast:AST) extends BaseVisitor with Utils {
     //visitReturn
     override def visitReturn(ast: Return, c: Any): Any = {
         val env = c.asInstanceOf[List[List[Symbol]]]
-        if(ast.expr == None) VoidType
+        val funcType = getFunctionType(env)
+        //return
+        val returnType = if(ast.expr == None) VoidType
         else ast.expr.map(_.accept(this,env)).get
+
+        //checkTypeMismatchInStatement
+        // if(checkReturnOfFunc(funcType,returnType.asInstanceOf[Type]) == false)
+        //     throw TypeMismatchInStatement(ast)
+        //return env
+        env 
     }
     override def visitDowhile(ast: Dowhile, c:Any): Any = {
         val env = c.asInstanceOf[List[List[Symbol]]]
@@ -203,17 +335,79 @@ class StaticChecker(ast:AST) extends BaseVisitor with Utils {
 
 
     override def visitBinaryOp(ast: BinaryOp, c: Any): Any = {
+
         val env = c.asInstanceOf[List[List[Symbol]]]
+        // //Check Undeclared
+        // ast.left.accept(this,env)
+        // ast.right.accept(this,env)
         
-        //return env
-        env
+        //return type
+        if(ast.op =="=") return checkAssign(ast, env)
+        if(ast.op == "+" || ast.op == "-" || ast.op == "*" || ast.op == "/") return check_add_sub_div_mul(ast,env)
+        if(ast.op =="==" || ast.op == "!=") return check_equal_notequal(ast,env)
+        if(ast.op == "<" || ast.op == ">" || ast.op == ">=" || ast.op == "<=") return check_compare(ast,env)
+        if(ast.op == "&&" || ast.op == "||") return check_logicAnd_logicOr(ast,env)
+        if(ast.op == "%") return check_mod(ast,env)
     }
     override def visitUnaryOp(ast: UnaryOp, c: Any): Any = {
          val env = c.asInstanceOf[List[List[Symbol]]]
-        //return env
-        env
+        // //Check Undeclared
+        // ast.body.accept(this,env)
+        //return type
+        if(ast.op == "-") return check_UnarySub(ast,env)
+        if(ast.op == "!") return check_UnaryNot(ast,env)
+
     }
-    override def visitCallExpr(ast: CallExpr, c: Any): Any = null
+    override def visitArrayCell(ast: ArrayCell, c: Any): Any = {
+        val env = c.asInstanceOf[List[List[Symbol]]]
+
+
+        //Check Undeclared
+        if(ast.idx.accept(this,env).toString() != "IntType")
+            throw TypeMismatchInExpression(ast)
+
+        if(ast.arr.accept(this,env).isInstanceOf[ArrayType])
+            return ast.arr.accept(this,env).asInstanceOf[ArrayType].eleType
+        else{     
+            if(ast.arr.accept(this,env).isInstanceOf[ArrayPointerType]){
+                return ast.arr.accept(this,env).asInstanceOf[ArrayPointerType].eleType
+            }
+            else throw TypeMismatchInExpression(ast)
+        }  
+
+    }
+    override def visitCallExpr(ast: CallExpr, c: Any): Any = {
+        val env =  c.asInstanceOf[List[List[Symbol]]]
+        //Check Undeclared Function 
+        if(checkUndeclaredIdentifier(ast.method,env) == true)
+            throw Undeclared(Function,ast.method.name)
+        //check TypeMismatchInExpression
+        val list_symbol = env.flatten
+        val symbolOfId = lookup(ast.method.name,list_symbol,getName_of_Symbol).get
+        //check so luong parameter
+        val sizeArgument = ast.params.size
+        val sizeParameter = symbolOfId.typ.asInstanceOf[List[Type]].size
+        if(sizeArgument != sizeParameter)
+            throw TypeMismatchInExpression(ast)
+        //check kieu cua tung tham so
+
+        //return type
+        IntType
+
+    }
+    override def visitId(ast: Id, c: Any): Any = {
+        val env = c.asInstanceOf[List[List[Symbol]]]
+        //checkUndeclaredIdentifier
+        if(checkUndeclaredIdentifier(ast,env) == true)
+            throw Undeclared(Identifier,ast.name)
+
+        //return type Id
+        val list_symbol = env.flatten
+        val symbolOfId = lookup(ast.name,list_symbol,getName_of_Symbol).get
+        //neu la function thi tra ve kieu cua function con id thi tra ve kieu id
+        if(symbolOfId.typ.isInstanceOf[FunctionType]) return symbolOfId.typ.asInstanceOf[FunctionType].output
+        symbolOfId.typ
+    }
 
     override def visitIntLiteral(ast: IntLiteral, c: Any): Any = IntType
     override def visitFloatLiteral(ast: FloatLiteral, c: Any): Any = FloatType
@@ -221,6 +415,5 @@ class StaticChecker(ast:AST) extends BaseVisitor with Utils {
     override def visitBooleanLiteral(ast: BooleanLiteral, c: Any): Any = BoolType
     override def visitArrayType(ast: ArrayType, c: Any): Any = ast
     override def visitArrayPointerType(ast:ArrayPointerType, c: Any): Any = ast
-    override def visitId(ast: Id, c: Any): Any = ArrayType(IntLiteral(5),BoolType)
     	
 }
