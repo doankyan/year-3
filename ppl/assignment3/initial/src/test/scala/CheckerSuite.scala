@@ -66,22 +66,18 @@ class CheckerSuite extends FunSuite with TestChecker {
     val expected = """Redeclared Variable: b"""
     assert(checkCkr(input,expected,406))
 }
-  test("TestDemo") {
-    val input = """
-                  string[] main(int var){
-                    int a;
-                    a + 2;
-                    return 3;
-                  }
-                  int func(float m[], int p[]){
-                    float a;
-                    a+4-2+(-3)== main(true)[2];
-                    return p[1];
-                  }
-                  
-                  
-                  """
-    val expected = """Type Mismatch In Statement: If(BinaryOp(+,IntLiteral(2),IntLiteral(3)),BinaryOp(=,Id(a),IntLiteral(2)),None)"""
-    assert(checkCkr(input,expected,407))
-}
+//   test("TestDemo") {
+//     val input = """
+//                   int func1(){
+//                     return main(2);
+//                   }
+//                   string[] main(int var){                   
+//                   }
+//                   int a,b,c,d;
+//                   float e;
+//                   boolean f;              
+//                   """
+//     val expected = """Type Mismatch In Statement: If(BinaryOp(+,IntLiteral(2),IntLiteral(3)),BinaryOp(=,Id(a),IntLiteral(2)),None)"""
+//     assert(checkCkr(input,expected,407))
+// }
 }

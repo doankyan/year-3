@@ -1,1 +1,1 @@
-Type Mismatch In Expression: CallExpr(Id(main),List(BooleanLiteral(true)))
+Type Mismatch In Statement: Return(Some(CallExpr(Id(main),List(IntLiteral(2)))))

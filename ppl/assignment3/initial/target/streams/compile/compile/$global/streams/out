@@ -1,4 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\assignment3\initial\src\main\mc\checker\StaticCheck.scala:416:65: value map is not a member of (List[mc.utils.Type], List[mc.utils.Type])[0m
-[0m[[0m[31merror[0m] [0m[0m        val list_Truth = (listType_Argument,listType_Parameter).map((x:Type,y:Type) =>[0m
-[0m[[0m[31merror[0m] [0m[0m                                                                ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\assignment3\initial\src\main\mc\checker\StaticCheck.scala:77:18: value typ is not a member of List[mc.checker.Symbol][0m
+[0m[[0m[31merror[0m] [0m[0m        env.last.typ.asInstanceOf[FunctionType].output[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

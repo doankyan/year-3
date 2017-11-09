@@ -33,15 +33,48 @@ class StaticChecker(ast:AST) extends BaseVisitor with Utils {
     
     def check() = visit(ast,null)
 
+    def built_in_Function():Any = {
+        val getInt = Symbol("getInt",FunctionType(List(),IntType),null)
+        val putInt = Symbol("putInt",FunctionType(List(IntType),VoidType),null)
+        val putIntLn =  Symbol("putIntLn",FunctionType(List(IntType),VoidType),null)
+        val getFloat = Symbol("getFloat",FunctionType(List(),FloatType),null) 
+        val putFloat = Symbol("putFloat",FunctionType(List(),VoidType),null)
+        val putFloatLn = Symbol("putFloatLn",FunctionType(List(FloatType),VoidType),null) 
+        val putBool = Symbol("putBool",FunctionType(List(BoolType),VoidType),null)
+        val putBoolLn = Symbol("putBoolLn",FunctionType(List(BoolType),VoidType),null)
+        val putString = Symbol("putString",FunctionType(List(StringType),VoidType),null)
+        val putStringLn =  Symbol("putStringLn",FunctionType(List(StringType),VoidType),null)
+        val putLn = Symbol("putLn",FunctionType(List(),VoidType),null)
+        val list_symbol = List[Symbol](getInt,putInt,putIntLn,getFloat,putFloat,putFloatLn,putBool, putBoolLn,putString,putStringLn,putLn)  
+        list_symbol
+    }
+
     def getName_of_Symbol(x:Symbol) = x.name
+
+    def changeEnvFunction2(name:Id,l:List[Symbol]):List[Symbol] = {
+        val functionSymbol = lookup(name.name,l,getName_of_Symbol).get
+        val idx = l.indexOf(functionSymbol)
+        val range1 = List.range(0,idx)
+        val range2 = List.range(idx+1,l.size)
+        val temp_list = range2.foldLeft(range1.foldLeft(List[Symbol]())((L,x)=>l(x)::L))((L,x)=>l(x)::L)
+        temp_list.foldLeft(List(functionSymbol))((L,x)=>x::L)
+
+
+    }
 
     def changeEnvFunction(name: Id, c: Any): Any = {
         val env = c.asInstanceOf[List[List[Symbol]]]
-        env
+        val sizeenv = env.size
+        val globalenv = env.last
+        val rangeenv = List.range(0,sizeenv-1)
+        val temp_list = rangeenv.foldLeft(List[List[Symbol]]())((L,x) => env(x)::L)
+        val newglobalenv = changeEnvFunction2(name,globalenv)
+        val newenv = List(newglobalenv)
+        temp_list.foldLeft(newenv)((L:List[List[Symbol]],x:List[Symbol]) => x::L)
     }
     def getFunctionType(c: Any): Type = {
         val env = c.asInstanceOf[List[List[Symbol]]]
-        env.last(env.size-1).typ.asInstanceOf[FunctionType].output
+        env.last.last.typ.asInstanceOf[FunctionType].output
     }
     def checkReturnOfFunc(funcType:Type,returnType:Type): Boolean = { 
         if(funcType.isInstanceOf[ArrayPointerType]){ 
@@ -207,7 +240,8 @@ class StaticChecker(ast:AST) extends BaseVisitor with Utils {
     }
 
     override def visitProgram(ast: Program, c: Any): Any = {
-        val t_Symbols = ast.decl.foldLeft(List[Symbol]())((L,y) => y match {
+        val globalSymbols = built_in_Function().asInstanceOf[List[Symbol]]
+        val t_Symbols = ast.decl.foldLeft(globalSymbols)((L,y) => y match {
                 case VarDecl(i,t) => {
                     if(lookup(i.name,L, getName_of_Symbol) == None)
                         Symbol(i.name, t, null) :: L
@@ -256,8 +290,7 @@ class StaticChecker(ast:AST) extends BaseVisitor with Utils {
                 }
             )
             val newenv = temp2_Symbols::env 
-            val returnenv = changeEnvFunction( ast.name, newenv
-            ) 
+            val returnenv = changeEnvFunction(ast.name, newenv)
             ast.body.asInstanceOf[Block].stmt.map((x:Stmt) =>  
                 if(x.isInstanceOf[Return]) x.accept(this,returnenv)
                 else x.accept(this,newenv)
@@ -339,9 +372,8 @@ class StaticChecker(ast:AST) extends BaseVisitor with Utils {
         else ast.expr.map(_.accept(this,env)).get
 
         //checkTypeMismatchInStatement
-        // if(checkReturnOfFunc(funcType,returnType.asInstanceOf[Type]) == false)
-        //     throw TypeMismatchInStatement(ast)
-        //return env
+        if(checkReturnOfFunc(funcType,returnType.asInstanceOf[Type]) == false)
+            throw TypeMismatchInStatement(ast)
         env 
     }
     override def visitDowhile(ast: Dowhile, c:Any): Any = {
