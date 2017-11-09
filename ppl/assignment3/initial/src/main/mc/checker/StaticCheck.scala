@@ -58,10 +58,7 @@ class StaticChecker(ast:AST) extends BaseVisitor with Utils {
         val range2 = List.range(idx+1,l.size)
         val temp_list = range2.foldLeft(range1.foldLeft(List[Symbol]())((L,x)=>l(x)::L))((L,x)=>l(x)::L)
         temp_list.foldLeft(List(functionSymbol))((L,x)=>x::L)
-
-
     }
-
     def changeEnvFunction(name: Id, c: Any): Any = {
         val env = c.asInstanceOf[List[List[Symbol]]]
         val sizeenv = env.size
@@ -89,7 +86,7 @@ class StaticChecker(ast:AST) extends BaseVisitor with Utils {
             val y  = returnType.toString()
             (x,y) match {
                 case("BoolType","BoolType") => true
-                case("StringTye","StringTye") => true
+                case("StringType","StringType") => true
                 case("FloatType","FloatType") => true
                 case("FloatType","IntType") => true
                  case("IntType","IntType") => true
@@ -117,11 +114,10 @@ class StaticChecker(ast:AST) extends BaseVisitor with Utils {
             val y  = typeRight.toString()
             (x,y) match {
                 case("BoolType","BoolType") => typeLeft
-                case("StringTye","StringTye") => typeLeft
+                case("StringType","StringType") => typeLeft
                 case("FloatType","FloatType") => typeLeft
                 case("FloatType","IntType") => typeLeft
                 case("IntType","IntType") => typeLeft
-                case("VoidType","VoidType") => typeLeft
                 case _ => throw TypeMismatchInExpression(ast)
                 }
             }
@@ -140,7 +136,6 @@ class StaticChecker(ast:AST) extends BaseVisitor with Utils {
             case("IntType","FloatType") => FloatType
             case _ =>throw TypeMismatchInExpression(ast)           
         }
-
     }
     def check_equal_notequal(ast:BinaryOp,c:Any): Type = {
         
@@ -150,11 +145,8 @@ class StaticChecker(ast:AST) extends BaseVisitor with Utils {
         val x = typeLeft.toString()
         val y = typeRight.toString()
         (x,y) match {
-            case("FloatType","FloatType") => BoolType
-            case("FloatType","IntType") => BoolType
             case("IntType","IntType") => BoolType
-            case("IntType","FloatType") => BoolType
-            case("Boolean","Boolean") => BoolType
+            case("BoolType","BoolType") => BoolType
             case _ =>throw TypeMismatchInExpression(ast)           
         }
     }
@@ -195,7 +187,6 @@ class StaticChecker(ast:AST) extends BaseVisitor with Utils {
             case("IntType","IntType") => IntType
             case _ =>throw TypeMismatchInExpression(ast)           
         }
-
     }
     def check_UnarySub(ast:UnaryOp, c: Any): Type = {
         val env = c.asInstanceOf[List[List[Symbol]]]
@@ -206,7 +197,6 @@ class StaticChecker(ast:AST) extends BaseVisitor with Utils {
             case("FloatType") => FloatType
             case _ =>throw TypeMismatchInExpression(ast)           
         }
-
     }
     def check_UnaryNot(ast:UnaryOp, c: Any): Type = {
         val env = c.asInstanceOf[List[List[Symbol]]]
@@ -230,7 +220,7 @@ class StaticChecker(ast:AST) extends BaseVisitor with Utils {
             val y  = returnType.toString()
             (x,y) match {
                 case("BoolType","BoolType") => true
-                case("StringTye","StringTye") => true
+                case("StringType","StringType") => true
                 case("FloatType","FloatType") => true
                 case("FloatType","IntType") => true
                 case("IntType","IntType") => true
@@ -258,8 +248,7 @@ class StaticChecker(ast:AST) extends BaseVisitor with Utils {
         val env = List(t_Symbols)
         ast.decl.filter(_.isInstanceOf[FuncDecl]).map(_.accept(this,env))
         env
-		}
-
+	}
 	override def visitFuncDecl(ast: FuncDecl, c: Any): Any = {
         val env = c.asInstanceOf[List[List[Symbol]]]
 
@@ -299,7 +288,6 @@ class StaticChecker(ast:AST) extends BaseVisitor with Utils {
         //truyen lai env Function
         env
 	}
-
     override def visitBlock(ast: Block, c: Any): Any = {
         val env = c.asInstanceOf[List[List[Symbol]]]
         val t_Symbols = ast.decl.foldLeft(List[Symbol]())((L,y) => y match {
@@ -436,6 +424,7 @@ class StaticChecker(ast:AST) extends BaseVisitor with Utils {
         //check TypeMismatchInExpression
         val list_symbol = env.flatten
         val symbolOfId = lookup(ast.method.name,list_symbol,getName_of_Symbol).get
+        if(!symbolOfId.typ.isInstanceOf[FunctionType]) throw Undeclared(Function,symbolOfId.name)
         //check so luong parameter
         val sizeArgument = ast.params.size
         val sizeParameter = symbolOfId.typ.asInstanceOf[FunctionType].input.asInstanceOf[List[Type]].size
@@ -451,12 +440,11 @@ class StaticChecker(ast:AST) extends BaseVisitor with Utils {
 
         //return type
         symbolOfId.typ.asInstanceOf[FunctionType].output
-
     }
     override def visitId(ast: Id, c: Any): Any = {
         val env = c.asInstanceOf[List[List[Symbol]]]
         //checkUndeclaredIdentifier
-        if(checkUndeclaredIdentifier(ast,env) == true)
+        if(checkUndeclaredIdentifier(ast,env))
             throw Undeclared(Identifier,ast.name)
 
         //return type Id

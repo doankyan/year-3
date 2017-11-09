@@ -1,10 +1,11 @@
 
                   int func1(){
-                    return main(2);
+                    string a;
+                    a = "kyan";
+                    return 2;
                   }
                   string[] main(int var){                   
-                  }
-                  int a,b,c,d;
-                  float e;
-                  boolean f;              
+                  string a;
+                  putStringLn("*");
+                  }             
                   
