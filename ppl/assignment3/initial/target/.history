@@ -1,48 +1,3 @@
-testOnly CheckerSuite
-compile
-testOnly CheckerSuite
-compile
-testOnly CheckerSuite
-compile
-testOnly CheckerSuite
-compile
-testOnly CheckerSuite
-compile
-testOnly CheckerSuite
-compile
-testOnly CheckerSuite
-compile
-testOnly CheckerSuite
-compile
-testOnly CheckerSuite
-compile
-testOnly CheckerSuite
-compile
-testOnly CheckerSuite
-compile
-testOnly CheckerSuite
-compile
-testOnly CheckerSuite
-compile
-testOnly CheckerSuite
-compile
-testOnly CheckerSuite
-compile
-testOnly CheckerSuite
-compile
-testOnly CheckerSuite
-compile
-testOnly CheckerSuite
-compile
-testOnly CheckerSuite
-compile
-testOnly CheckerSuite
-compile
-testOnly CheckerSuite
-compile
-testOnly CheckerSuite
-compile
-testOnly CheckerSuite
 compile
 testOnly CheckerSuite
 compile
@@ -468,6 +423,51 @@ compile
 testOnly CheckerSuite
 compile
 testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+compile
+testOnly CheckerSuite
+clean
 compile
 testOnly CheckerSuite
 compile

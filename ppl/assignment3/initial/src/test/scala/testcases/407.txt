@@ -1,11 +1,4 @@
-
-                  int func1(){
-                    string a;
-                    a = "kyan";
-                    return 2;
-                  }
-                  string[] main(int var){                   
-                  string a;
-                  putStringLn("*");
-                  }             
-                  
+   
+                  int a;
+                  void main(string b[], int a, float b){}          
+                

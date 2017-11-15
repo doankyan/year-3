@@ -1,0 +1,8 @@
+
+                void main(){
+                  string a;
+                  a = 2.0;
+                  return;
+                }
+                      
+                

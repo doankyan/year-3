@@ -1,0 +1,6 @@
+  
+                void main(string str[]){
+                (true && false)||str[1];
+                return;
+              }     
+                

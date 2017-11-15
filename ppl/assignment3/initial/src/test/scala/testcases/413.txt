@@ -1,0 +1,3 @@
+
+                void putLn(int a){}                     
+                

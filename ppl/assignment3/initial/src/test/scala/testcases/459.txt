@@ -1,0 +1,12 @@
+     
+                  boolean func(boolean arr){
+                    arr = true;
+                    return !arr;
+                  }
+                  void main(){
+                    int n;
+                    int a;
+                    !(!func(a==n));
+                    return;
+                  }
+                

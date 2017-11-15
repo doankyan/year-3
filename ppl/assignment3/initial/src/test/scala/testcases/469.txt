@@ -1,0 +1,13 @@
+  
+              boolean[] func(boolean arr[]){
+                arr[1] = (2==3);
+                return arr;
+              }   
+              void main(){
+                int a;
+                float b;
+                boolean c[5];
+                ((c[1]!=true)==(a==a))!=func(c);
+                return;
+              }     
+                

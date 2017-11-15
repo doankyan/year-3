@@ -1,0 +1,1 @@
+Type Mismatch In Expression: BinaryOp(==,BinaryOp(==,BinaryOp(!=,BinaryOp(==,Id(a),IntLiteral(1)),ArrayCell(Id(c),IntLiteral(2))),BinaryOp(!=,BinaryOp(==,IntLiteral(2),IntLiteral(3)),BooleanLiteral(false))),StringLiteral(chuoi))

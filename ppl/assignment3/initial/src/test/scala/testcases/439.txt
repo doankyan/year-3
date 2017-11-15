@@ -1,0 +1,10 @@
+ 
+    string f(string i){
+      return i;
+    }
+      void main(){
+        string str;
+        str = f();
+        return;
+      }                  
+                

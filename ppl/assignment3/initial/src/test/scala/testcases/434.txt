@@ -1,0 +1,9 @@
+
+                void main(){
+                  boolean arr[10];
+                  int a[10];
+                  a = arr;
+                  return;
+                }
+                      
+                

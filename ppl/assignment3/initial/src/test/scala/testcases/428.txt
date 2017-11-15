@@ -1,0 +1,9 @@
+ 
+                int[] foo(boolean a){
+                }
+                void main(){
+                  float a[10];
+                  a[foo(false)] = 2;
+                }   
+                      
+                

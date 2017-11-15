@@ -1,0 +1,12 @@
+  
+                void main(){
+                int a,d[10];
+                float b;
+                boolean c[5];
+                (a>2);
+                (b<1);
+                (2+3.0)>=5;
+                (d[1]+a) <= c[1];
+                return;
+              }     
+                

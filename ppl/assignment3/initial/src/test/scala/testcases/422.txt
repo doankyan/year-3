@@ -1,0 +1,11 @@
+
+                float a;
+                int func(){
+                  return 3;
+                }     
+                void main(){
+                  int a;
+                  for(a=1;a<=10;a=a+2) foo(2);
+                  return;
+                }
+                

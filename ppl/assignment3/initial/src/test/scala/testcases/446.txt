@@ -1,0 +1,15 @@
+ 
+    string f(string i,boolean m, float a,float b){
+      return i;
+    }
+    string func(int a){
+      return "demo";
+    }
+      void main(){
+        string str;
+        float b;
+        b = 1.0;
+        str = f("an",true,b,func(5,2.0));
+        return;
+      }                  
+                

@@ -1,0 +1,10 @@
+
+                void func(){
+                  int a;
+                  string str;
+                  float c[10];
+                  boolean d; 
+                  a*a/c[1]-d;
+                  return;
+                }  
+                

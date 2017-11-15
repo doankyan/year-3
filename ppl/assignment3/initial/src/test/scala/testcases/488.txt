@@ -1,0 +1,9 @@
+
+                int a;
+                void main(){
+                  float b[10];
+                  for((a = 1); (b[1] = a+5)*5.2;a = a+1) 5;
+                  return;
+                }     
+                      
+                

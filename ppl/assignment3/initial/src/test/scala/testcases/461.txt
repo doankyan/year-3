@@ -1,0 +1,9 @@
+
+                void func(int a, float b, float arr[]){
+                  string c[10];
+                  boolean d; 
+                  if((a+b-arr[1]+d+2*3/4)==2)
+                    if(true) a = a + 1;
+                  return;
+                }  
+                

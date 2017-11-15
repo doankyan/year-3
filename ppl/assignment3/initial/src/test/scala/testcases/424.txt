@@ -1,0 +1,11 @@
+
+                float a;
+                int func(){
+                  return 3;
+                }     
+                void main(){
+                  int a;
+                  do a==2; while (func()+2-foo(1)[2])==true;
+                  return;
+                }
+                

@@ -1,0 +1,12 @@
+ 
+    string f(string i,boolean m, float a){
+      return i;
+    }
+      void main(){
+        string str;
+        float b;
+        b = 1.0;
+        str = f("an",true,b,true);
+        return;
+      }                  
+                

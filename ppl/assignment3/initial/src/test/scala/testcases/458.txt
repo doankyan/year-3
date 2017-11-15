@@ -1,0 +1,12 @@
+     
+                  int[] func(int arr[]){
+                    arr[1] = 0;
+                    return arr;
+                  }
+                  void main(int b[]){
+                    int n;
+                    int a;
+                    !(-func[b[1]] - a%n);
+                    return;
+                  }
+                

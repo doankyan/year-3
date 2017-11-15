@@ -1,4 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\assignment3\initial\src\main\mc\checker\StaticCheck.scala:77:18: value typ is not a member of List[mc.checker.Symbol][0m
-[0m[[0m[31merror[0m] [0m[0m        env.last.typ.asInstanceOf[FunctionType].output[0m
-[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\github\year-3\ppl\assignment3\initial\src\main\mc\checker\StaticCheck.scala:71:15: not found: value FunctionNotRetrun[0m
+[0m[[0m[31merror[0m] [0m[0m        throw FunctionNotRetrun(""+temp_list.foldLeft(newenv)((L:List[List[Symbol]],x:List[Symbol]) => x::L))[0m
+[0m[[0m[31merror[0m] [0m[0m              ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

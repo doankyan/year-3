@@ -1,0 +1,7 @@
+
+                int func(){}
+                void main(){
+                  a1[5] = getInt();
+                  return;
+                  }                     
+                

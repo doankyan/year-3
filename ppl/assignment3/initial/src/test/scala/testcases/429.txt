@@ -1,0 +1,9 @@
+ 
+                int foo(boolean a){ return 0;
+                }
+                void main(){
+                  float b;
+                  b[foo(false)] = 2;
+                }   
+                      
+                

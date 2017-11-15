@@ -1,0 +1,7 @@
+     
+                float a,b;
+                void main(){
+                  if(main()) a = 2.5;
+                  else b = 3.5;
+                }      
+                

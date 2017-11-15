@@ -1,0 +1,9 @@
+
+                  float a;
+                  float d[10];
+                  int b;     
+                  void main(){
+                    do a = 2.5; b = 1; while(d);
+                    return;
+                  } 
+                

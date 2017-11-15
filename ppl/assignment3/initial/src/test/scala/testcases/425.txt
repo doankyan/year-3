@@ -1,0 +1,11 @@
+
+                float a;
+                int func(int m){
+                  return 3;
+                }     
+                void main(){
+                  int a;
+                  if(a!=2) true; else a % (func(3)+foo(2));
+                  return;
+                }
+                

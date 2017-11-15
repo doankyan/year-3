@@ -1,0 +1,9 @@
+     
+              void main(){
+                int a;
+                float b;
+                boolean c[5];
+                ((c[1]!=true)==(a==a))!=(a==b);
+                return;
+              }     
+                

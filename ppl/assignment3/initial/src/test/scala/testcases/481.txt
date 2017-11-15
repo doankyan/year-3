@@ -1,0 +1,6 @@
+     
+                float a,b;
+                void main(){
+                  if(a=1)b = 2;
+                }      
+                

@@ -1,0 +1,10 @@
+  
+                float[] func(boolean a, float b[]){
+                  {
+                  int a[10];
+                  float arr[10];
+                  arr = func(a[5]*(3+0.5)>=5.5,func(a[1]==2&&false,b));
+                  }
+                  return arr;
+                }
+                

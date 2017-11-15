@@ -1,0 +1,1 @@
+Type Mismatch In Expression: UnaryOp(!,BinaryOp(-,ArrayCell(CallExpr(Id(func),List(Id(arr))),IntLiteral(1)),IntLiteral(3)))

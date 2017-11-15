@@ -1,2 +1,3 @@
-int a,b,a;
+int a;
+                   string b,a;
                 

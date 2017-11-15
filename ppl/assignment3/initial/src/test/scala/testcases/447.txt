@@ -1,0 +1,11 @@
+ 
+    int f(int a,float b,string c){
+      return 2;
+    }
+    int main(){
+      float m;
+      float n;
+      string k;
+      return f(m,n,k);
+    } 
+                

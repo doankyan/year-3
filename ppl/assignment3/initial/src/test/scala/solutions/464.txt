@@ -1,0 +1,1 @@
+Type Mismatch In Expression: BinaryOp(*,BinaryOp(-,BinaryOp(+,ArrayCell(Id(c),IntLiteral(1)),Id(s2)),BinaryOp(/,ArrayCell(Id(c),IntLiteral(2)),FloatLiteral(2.0))),StringLiteral(chuoi))

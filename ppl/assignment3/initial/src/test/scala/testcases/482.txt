@@ -1,0 +1,12 @@
+     
+                float a,b;
+                float func(boolean a){
+                  if(a==false) a = true;
+                  else false;
+                  return 2.5;
+                }
+                void main(){
+                  if(func(a<=b)*3) a = 2;
+                  else b = 3;
+                }      
+                

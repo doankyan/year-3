@@ -1,0 +1,13 @@
+
+                float foo(float n, float list[]){
+                  return n+list[1];
+                }
+                void main(string str[]){
+                  int arr[10];
+                  float b[10];
+                  float a[10];
+                  foo(2.0,a) = arr[0]+foo(2.0,b);
+                  return;
+                }
+                      
+                

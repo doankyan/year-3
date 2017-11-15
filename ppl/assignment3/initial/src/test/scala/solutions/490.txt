@@ -1,0 +1,1 @@
+Type Mismatch In Statement: For(Id(b),BinaryOp(||,BooleanLiteral(true),UnaryOp(!,BooleanLiteral(false))),UnaryOp(!,BinaryOp(=,ArrayCell(Id(a),IntLiteral(5)),BinaryOp(+,ArrayCell(Id(a),IntLiteral(5)),IntLiteral(3)))),Block(List(),List(BinaryOp(+,BinaryOp(+,IntLiteral(1),IntLiteral(2)),IntLiteral(3)))))

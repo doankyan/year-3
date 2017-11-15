@@ -1,0 +1,8 @@
+
+                  float a;
+                  int b;     
+                  void main(float arr[]){
+                    do a = 2.5; b = 1; while(arr);
+                    return;
+                  } 
+                

@@ -1,0 +1,9 @@
+
+                int a;
+                void main(){
+                  string str;
+                  for(a+3*2;a<=3; str = "test")5;
+                  return;
+                }     
+                      
+                

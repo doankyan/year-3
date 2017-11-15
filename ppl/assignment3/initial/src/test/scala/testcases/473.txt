@@ -1,0 +1,9 @@
+  
+                void main(string str[]){
+                int a,d[10];
+                float b;
+                boolean c[5];
+                false && (((a + d[1])==2)||(c[1]!=false))&&"string";
+                return;
+              }     
+                

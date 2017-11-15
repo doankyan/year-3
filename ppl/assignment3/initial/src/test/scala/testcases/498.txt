@@ -1,0 +1,14 @@
+
+                float func(){
+                  return 2.5;
+                }
+                int func2(){
+                  return 2;
+                }
+                string main(){
+                  float b;
+                  b = 5.6;
+                  return func()+func2();
+                }     
+                      
+                

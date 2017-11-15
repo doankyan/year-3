@@ -1,0 +1,12 @@
+  
+                float func(float a, string b){
+                  return 5.2;
+                }
+                void main(string str[]){
+                int a;
+                boolean b[10];
+                float c[20];
+                func(func(func(((c[1]=0.5)-(c[2])*3),str[1] = "check"),"check"),true);
+                return;
+              }     
+                

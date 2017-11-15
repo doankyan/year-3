@@ -1,0 +1,16 @@
+
+              string func(string str){
+                return func("kyan");
+              }
+              int getName(){
+                if(getInt()==1){
+                  return 1;
+                  do putFloat(getFloat()); while true;
+                  
+                }
+                else {
+                  return getName(putStringLn(getName("Name")));
+                }
+              }
+                      
+                

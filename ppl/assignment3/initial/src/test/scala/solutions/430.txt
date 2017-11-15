@@ -1,0 +1,1 @@
+Type Mismatch In Expression: ArrayCell(CallExpr(Id(func),List(IntLiteral(10))),CallExpr(Id(foo),List(BooleanLiteral(false))))

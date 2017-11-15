@@ -1,0 +1,7 @@
+     
+                 float main(){
+                  int a;
+                  string b[10];
+                  return a + (-b[5]); 
+                 }     
+                

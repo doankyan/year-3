@@ -1,0 +1,6 @@
+
+                int func(){}
+                void main(boolean a){
+                  func = 2;
+                  return;}                     
+                

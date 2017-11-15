@@ -1,0 +1,9 @@
+
+                  boolean m[5]; 
+                  void func(){}
+                  int main(){
+                    int m;
+                    return 0;
+                  }    
+                      
+                

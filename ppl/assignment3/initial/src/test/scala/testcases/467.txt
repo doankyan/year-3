@@ -1,0 +1,9 @@
+     
+              void main(){
+                int a;
+                float b;
+                boolean c[5];
+                (((a==1)!=c[2])==((2==3)!=false))=="chuoi";
+                return;
+              }     
+                

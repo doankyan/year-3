@@ -1,0 +1,9 @@
+     
+                  boolean f(boolean check){
+                    return check;
+                  }
+                 float main(int a[], int b[]){
+                  a[1] = -a[2];
+                  return -f(f(f(f(a[1]+a[2] == 5)))); 
+                 }     
+                

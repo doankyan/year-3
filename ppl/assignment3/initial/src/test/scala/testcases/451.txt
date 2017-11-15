@@ -1,0 +1,10 @@
+ 
+    int f(float a[],float b,string c, string u){
+      return 2;
+    }
+    int main(int m[]){
+      float n;
+      string k;
+      return f(m,2.5,"str", (n>=10.0)&&true&&(-m[2]==4));
+    } 
+                

@@ -1,0 +1,9 @@
+
+                void func(int a, float b, float arr){
+                  string c[10];
+                  boolean d; 
+                  if((d+a)==true)
+                    if(true) a = a + 1;
+                  return;
+                }  
+                

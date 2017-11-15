@@ -1,0 +1,8 @@
+  
+                void main(string str[]){
+                int a;
+                int d[10];
+                !((a = 1)==2)&&((d[1] = d[10]-2)!=3)||(2);
+                return;
+              }     
+                

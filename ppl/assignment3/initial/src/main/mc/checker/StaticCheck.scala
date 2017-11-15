@@ -38,7 +38,7 @@ class StaticChecker(ast:AST) extends BaseVisitor with Utils {
         val putInt = Symbol("putInt",FunctionType(List(IntType),VoidType),null)
         val putIntLn =  Symbol("putIntLn",FunctionType(List(IntType),VoidType),null)
         val getFloat = Symbol("getFloat",FunctionType(List(),FloatType),null) 
-        val putFloat = Symbol("putFloat",FunctionType(List(),VoidType),null)
+        val putFloat = Symbol("putFloat",FunctionType(List(FloatType),VoidType),null)
         val putFloatLn = Symbol("putFloatLn",FunctionType(List(FloatType),VoidType),null) 
         val putBool = Symbol("putBool",FunctionType(List(BoolType),VoidType),null)
         val putBoolLn = Symbol("putBoolLn",FunctionType(List(BoolType),VoidType),null)
@@ -66,8 +66,10 @@ class StaticChecker(ast:AST) extends BaseVisitor with Utils {
         val rangeenv = List.range(0,sizeenv-1)
         val temp_list = rangeenv.foldLeft(List[List[Symbol]]())((L,x) => env(x)::L)
         val newglobalenv = changeEnvFunction2(name,globalenv)
+
         val newenv = List(newglobalenv)
         temp_list.foldLeft(newenv)((L:List[List[Symbol]],x:List[Symbol]) => x::L)
+
     }
     def getFunctionType(c: Any): Type = {
         val env = c.asInstanceOf[List[List[Symbol]]]
@@ -247,7 +249,7 @@ class StaticChecker(ast:AST) extends BaseVisitor with Utils {
         //return 
         val env = List(t_Symbols)
         ast.decl.filter(_.isInstanceOf[FuncDecl]).map(_.accept(this,env))
-        env
+        null
 	}
 	override def visitFuncDecl(ast: FuncDecl, c: Any): Any = {
         val env = c.asInstanceOf[List[List[Symbol]]]
@@ -282,7 +284,7 @@ class StaticChecker(ast:AST) extends BaseVisitor with Utils {
             val returnenv = changeEnvFunction(ast.name, newenv)
             ast.body.asInstanceOf[Block].stmt.map((x:Stmt) =>  
                 if(x.isInstanceOf[Return]) x.accept(this,returnenv)
-                else x.accept(this,newenv)
+                else x.accept(this,returnenv)
                 )            
         }
         //truyen lai env Function
@@ -358,7 +360,6 @@ class StaticChecker(ast:AST) extends BaseVisitor with Utils {
         //return
         val returnType = if(ast.expr == None) VoidType
         else ast.expr.map(_.accept(this,env)).get
-
         //checkTypeMismatchInStatement
         if(checkReturnOfFunc(funcType,returnType.asInstanceOf[Type]) == false)
             throw TypeMismatchInStatement(ast)

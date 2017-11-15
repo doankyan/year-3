@@ -1,0 +1,1 @@
+Type Mismatch In Expression: BinaryOp(*,BinaryOp(+,BinaryOp(-,BinaryOp(+,Id(a),IntLiteral(3)),BinaryOp(*,FloatLiteral(5.2),ArrayCell(Id(b),IntLiteral(1)))),BinaryOp(*,BinaryOp(/,IntLiteral(3),FloatLiteral(2.0)),BinaryOp(/,Id(a),ArrayCell(Id(b),IntLiteral(2))))),Id(arr))

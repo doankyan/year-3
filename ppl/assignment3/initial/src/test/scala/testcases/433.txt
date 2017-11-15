@@ -1,0 +1,11 @@
+
+                float func(float n){
+                  return n;
+                }
+                void main(){
+                  boolean a;
+                  a = func(2.0);
+                  return;
+                }
+                      
+                

@@ -1,8 +1,9 @@
-int a;
-                    int main(int a){
-                      {
-                        int b,b;
-                      }
-                    }
+
+                    int a;
+                    void func(){return;}
+                    float b;
+                    int[] func(){
+                      int a[10];
+                      return;}
                     
                 

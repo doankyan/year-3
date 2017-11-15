@@ -1,0 +1,9 @@
+  
+                void main(string str[]){
+                int a,d[10];
+                a = 2;
+                (7%a)%3;
+                ((a%2)==0)%2;
+                return;
+              }     
+                

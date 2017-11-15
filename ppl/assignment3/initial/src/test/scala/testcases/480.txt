@@ -1,0 +1,11 @@
+  
+                int func1(float a, int b, boolean c){
+                  func2(b+func1(0.5,2,true),func2(5,b+0.5));
+                  return b*2;
+                }
+                float c[10];
+                float func2(int a, float b){
+                    return func1(c[1]=0.5,3,func2(5,0.5)<=3) + (a!=2);
+
+                }
+                

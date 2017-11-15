@@ -1,0 +1,9 @@
+
+                void main(string str[]){
+                  boolean arr[10];
+                  int a[10];
+                  arr = str;
+                  return;
+                }
+                      
+                

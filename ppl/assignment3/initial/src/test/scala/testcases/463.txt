@@ -1,0 +1,8 @@
+
+                void func(string s1, float s2){
+                  float c[10];
+                  boolean d; 
+                  (s2 + c[1])/(d-c);
+                  return;
+                }  
+                

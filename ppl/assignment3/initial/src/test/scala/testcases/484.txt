@@ -1,0 +1,7 @@
+     
+                float a,b;
+                void main(float arr[]){
+                  if(arr) a = 2.5;
+                  else b = 3.5;
+                }      
+                

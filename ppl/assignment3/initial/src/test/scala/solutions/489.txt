@@ -1,0 +1,1 @@
+Type Mismatch In Statement: For(BinaryOp(+,Id(a),BinaryOp(*,IntLiteral(3),IntLiteral(2))),BinaryOp(<=,Id(a),IntLiteral(3)),BinaryOp(=,Id(str),StringLiteral(test)),IntLiteral(5))

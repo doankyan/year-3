@@ -1,0 +1,9 @@
+
+                int a;
+                void main(){
+                  a = 2;
+                  for((a+3)>=2;a<=3;a = a+1)5;
+                  return;
+                }     
+                      
+                

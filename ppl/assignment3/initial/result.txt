@@ -1,15 +1,107 @@
 Run starting. Expected test count is: 0
 CheckerSuite:
-- 1: Redeclared VarDecl Global
-- 2: Redeclared FuncDecl
-- 3: Redeclared Parameter
-- 4: Redeclared Variable in Function
-- 5: Redeclared Variable in Block of Function
-- 6: Redeclared Variable in Block of Function 2
-- TestDemo *** FAILED ***
-  CheckerSuite.this.checkCkr(input, expected, 407) was false (CheckerSuite.scala:82)
-Run completed in 511 milliseconds.
-Total number of tests run: 7
+- 1 Redeclared VarDecl Global 1
+- 2 Redeclared VarDecl Global 2
+- 3 Redeclared FuncDecl: 
+- 4 Redeclared FuncDecl: int float
+- 5 Redeclared FuncDecl: void and arayType
+- 6 Redeclared Parameter: 1
+- 7 Redeclared Parameter: 2
+- 8 Redeclared Variable: Variable and Parameter
+- 9 Redeclared Variable: Block
+- 10 No Redeclared: Parameter
+- 11 No Redeclared: local Variable
+- 12 No Redeclared: Parameter and Function
+- 13 Redeclared Built-in Function
+- 14 Redeclared Built-in Function
+- 15 Undeclared Identifier
+- 16 Undeclared Identifier: Global func end Local Scope
+- 17 Undeclared Identifier: local scope and not error
+- 18 Undeclared Identifier: arrayType
+- 19 Undeclared Function simple 
+- 20 Undeclared Function complex return 
+- 21 Undeclared Function complex 2 - expression 
+- 22 Undeclared Function complex 3 - forstmt 
+- 23 Undeclared Function complex 4 - dowhilestmt1
+- 24 Undeclared Function complex 4 - dowhilestmt2
+- 25 Undeclared Function complex 4 - ifStmt
+- 26 Type Mismatch In Expression: Array Cell1
+- 27 Type Mismatch In Expression: Array Cell2
+- 28 Type Mismatch In Expression: Array Cell3
+- 29 Type Mismatch In Expression: Array Cell4
+- 30 Type Mismatch In Expression: Array Cell5
+- 31 Type Mismatch In Expression: Array Cell5(not error
+- 32 Type Mismatch In Expression: Assign
+- 33 Type Mismatch In Expression: Assign2
+- 34 Type Mismatch In Expression: Assign3
+- 35 Type Mismatch In Expression: Assign4 (arrayType = ArrayPointerType
+- 36 Type Mismatch In Expression: Assign5(not error) float = int
+- 37 Type Mismatch In Expression: Assign6(not error)(not error)
+- 38 Type Mismatch In Expression: Assign6(not error) ArrayPointerType = float
+- 39 Type Mismatch In Expression: Function Call simple 1
+- 40 Type Mismatch In Expression: Function Call simple 2
+- 41 Type Mismatch In Expression: Function Call simple 3
+- 42 Type Mismatch In Expression: (no-error)Function Call simple 4
+- 43 Type Mismatch In Expression: Function Call size Parameter 1
+- 44 Type Mismatch In Expression: Function Call size Parameter 2
+- 45 Type Mismatch In Expression: Function Call size Parameter 3
+- 46 Type Mismatch In Expression: Function Call size Parameter 4
+- 47 Type Mismatch In Expression: Function Call type of Parameter 1
+- 48 Type Mismatch In Expression: Function Call type of Parameter 2(coerce)
+- 49 Type Mismatch In Expression: (no-error)Function Call - type of Parameter 1(coerce)
+- 50 Type Mismatch In Expression: (no-error)Function Call - type of Parameter 2(coerce)
+- 51 Type Mismatch In Expression: Function Call - type of Parameter 3(coerce)
+- 52 Type Mismatch In Expression: Not Unary Op - simple
+- 53 Type Mismatch In Expression: Not Unary Op - simple 2
+- 54 Type Mismatch In Expression: Not Unary Op - complex 
+- 55 Type Mismatch In Expression: Not Unary Op - complex2 
+- 56 Type Mismatch In Expression: Notlogic Unary Op 
+- 57 Type Mismatch In Expression: Notlogic Unary Op 2 
+- 58 Type Mismatch In Expression: Notlogic Unary Op 3 
+- 59 Type Mismatch In Expression: (not error) Notlogic Unary Op 4 
+- 60 Type Mismatch In Expression: Notlogic Unary Op 5 
+- 61 Type Mismatch In Expression: BinaryOp Add(+)  Sub(-)  Div(/)  Mul(*) 1
+- 62 Type Mismatch In Expression: BinaryOp Add(+)
+- 63 Type Mismatch In Expression: BinaryOp Sub(-)
+- 64 Type Mismatch In Expression: BinaryOp Div(/)
+- 65 Type Mismatch In Expression: BinaryOp Mul(*)
+- 66 Type Mismatch In Expression: BinaryOp Add(+)  Sub(-)  Div(/)  Mul(*) 1
+- 67 Type Mismatch In Expression: BinaryOp Equal(==) and Not equal(!=) 1
+- 68 Type Mismatch In Expression: BinaryOp Equal(==) and Not equal(!=) 2
+- 69 Type Mismatch In Expression: BinaryOp Equal(==) and Not equal(!=) 3
+- 70 Type Mismatch In Expression: BinaryOp Compare(< >= > <=) 1
+- 71 Type Mismatch In Expression: BinaryOp Compare(< >= > <=) 2
+- 72 Type Mismatch In Expression: BinaryOp logic(&&) or(||) 1
+- 73 Type Mismatch In Expression: BinaryOp logic(&&) or(||) 2
+- 74 Type Mismatch In Expression: Mod(%
+- 75 Type Mismatch In Expression: complex - Logic Or(||)
+- 76 Type Mismatch In Expression: complex Assign(=)
+- 77 Type Mismatch In Expression: complex - CallExpr
+- 78 Type Mismatch In Expression: complex -ArrayCell
+- 79 Type Mismatch In Expression: complex - Assign
+- 80 Type Mismatch In Expression: complex - Assign
+- 81 Type Mismatch In Statement: If simple
+- 82 Type Mismatch In Statement: If simple 2
+- 83 Type Mismatch In Statement: If simple 3
+- 84 Type Mismatch In Statement: If 1
+- 85 Type Mismatch In Statement: If 2
+- 86 Type Mismatch In Statement: If 3
+- 87 Type Mismatch In Statement: For Simple (expr1 = boolean)
+- 88 Type Mismatch In Statement: For Simple (expr2 = float) 
+- 89 Type Mismatch In Statement: For Simple (expr3 = string)
+- 90 Type Mismatch In Statement: For
+- 91 Type Mismatch In Statement: do while StringType
+- 92 Type Mismatch In Statement: do while ArrType
+- 93 Type Mismatch In Statement: do while IntType
+- 94 Type Mismatch In Statement: do while VoidType
+- 95 Type Mismatch In Statement: do while (ArrayPointerType
+- 96 Type Mismatch In Statement: return - VoidType
+- 97 Type Mismatch In Statement: return - VoidType
+- 98 Type Mismatch In Statement: return - PimitiveType(String - Float - Int - Boolean) 1
+- 99 Type Mismatch In Statement: return - ArrayType 2
+- 100 Type Mismatch In Statement: return && Built-in Function
+Run completed in 2 seconds, 71 milliseconds.
+Total number of tests run: 100
 Suites: completed 1, aborted 0
-Tests: succeeded 6, failed 1, canceled 0, ignored 0, pending 0
-*** 1 TEST FAILED ***
+Tests: succeeded 100, failed 0, canceled 0, ignored 0, pending 0
+All tests passed.
